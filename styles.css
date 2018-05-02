@@ -79,3 +79,19 @@ h3, p {
   margin-right: auto;
   font-size: 16px;
 }
+
+.social a {
+  text-decoration: none;
+}
+
+.solution {
+  padding: 18em 1.5em;
+}
+
+.black .solution .solution_text, .black .solution header {
+  color: white;
+}
+
+.white .solution .solution_text, .white .solution header {
+  color: black;
+}
