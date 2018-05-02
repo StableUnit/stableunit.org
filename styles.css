@@ -20,11 +20,11 @@ body {
 }
 
 section {
-  padding: 2% 1.5em;
+  padding: 1% 1.5em;
 }
 
 .calls-to-action {
-  padding-bottom: calc(3em + 5%);
+  padding-bottom: calc(2em + 5%);
 }
 
 .white {
