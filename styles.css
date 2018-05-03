@@ -85,7 +85,11 @@ h3, p {
 }
 
 .solution {
-  padding: 18em 1.5em;
+  padding: 12em 1.5em;
+}
+
+.solution_text a {
+  word-wrap: break-word;
 }
 
 .black .solution .solution_text, .black .solution header {
@@ -95,3 +99,4 @@ h3, p {
 .white .solution .solution_text, .white .solution header {
   color: black;
 }
+
