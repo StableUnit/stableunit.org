@@ -92,8 +92,12 @@ h3, p {
   padding: 12em 0;
 }
 
-.problem a {
+.black .problem a {
   color: white;
+}
+
+.white .problem a {
+  color: black;
 }
 
 .solution_text a {
