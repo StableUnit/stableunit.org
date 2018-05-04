@@ -92,6 +92,10 @@ h3, p {
   padding: 12em 0;
 }
 
+.problem a {
+  color: white;
+}
+
 .solution_text a {
   word-wrap: break-word;
 }
