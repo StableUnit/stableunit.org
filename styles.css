@@ -88,6 +88,10 @@ h3, p {
   padding: 12em 1.5em;
 }
 
+.problem {
+  padding: 12em 0;
+}
+
 .solution_text a {
   word-wrap: break-word;
 }
@@ -97,6 +101,15 @@ h3, p {
 }
 
 .white .solution .solution_text, .white .solution header {
+  color: black;
+}
+
+
+.black .problem .solution_text, .black .problem header {
+  color: white;
+}
+
+.white .problem .solution_text, .white .problem header {
   color: black;
 }
 
