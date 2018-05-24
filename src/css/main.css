@@ -167,10 +167,17 @@ footer {
   margin-top: 130px;
   border-top: 1px solid #efefef;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer p {
-  padding: 10px;
+  padding: 10px 32px;
+}
+
+footer a {
+  color: #F5A623;
+  text-decoration: underline;
 }
 
 ul.language_selection {
@@ -193,6 +200,7 @@ div.explanations {
 
 h1 a {
   border-bottom: 5px dashed black;
+  margin-right: 10px;
 }
 
 h1 a:hover {
