@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="content">
+  <section class="hero">
+    {{ .Content }}
+
+    <form
+      id="form_subscribe"
+      class="subscribe"
+      action="https://app.freshmail.com/en/actions/subscribe/"
+      method="post"
+
+    >
+      <input type="hidden" name="subscribers_list_hash" value="8kg0ni4hxz" />
+      <input
+        type="email"
+        name="freshmail_email"
+        placeholder="{{ i18n "your_email" }}"
+      />
+      <input type="hidden" name="ml-submit" value="1" />
+      <button type="submit">{{ i18n "subscribe" }}</button>
+    </form>
+
+    {{ partial "social_buttons" . }}
+  </section>
+
+  <aside>
+    <img src="/img/hero1.png" srcset="/img/hero1_2x.png 2x" alt="Stable Unit and Volatility Penguins" />
+  </aside>
+
+</section>
+
+<section class="block" id="explanations">
+  <h1>
+    {{ range where .Data.Pages "Section" "explanations" }}
+      <a href="{{ .Permalink }}" class="tab">{{ .Title }}</a>
+    {{ end }}
+  </h1>
+  <div class="explanations">
+    {{ range where .Data.Pages "Section" "explanations" }}
+      <div class="explanation" id="{{ .Permalink }}">
+        {{ .Content }}
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+
+{{end}}

@@ -1,0 +1,253 @@
+/*
+  You can use import statements to include partials:
+ */
+@import "imports/reset.css";
+
+
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('/fonts/GothamPro.eot?') format('eot'),
+       url('/fonts/GothamPro.otf')  format('opentype'),
+       url('/fonts/GothamPro.woff') format('woff'),
+       url('/fonts/GothamPro.ttf')  format('truetype'),
+       url('/fonts/GothamPro.svg#GothamPro') format('svg');
+}
+
+
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('/fonts/GothamPro-Bold.eot?') format('eot'),
+       url('/fonts/GothamPro-Bold.otf')  format('opentype'),
+       url('/fonts/GothamPro-Bold.woff') format('woff'),
+       url('/fonts/GothamPro-Bold.ttf')  format('truetype'),
+       url('/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+}
+
+
+::placeholder {
+  color: #ccc;
+}
+
+* {
+  line-height: 180%;
+}
+
+p em {
+  font-family: 'GothamPro-Bold' !important;
+  font-style: normal;
+}
+
+/*
+  Or add your statements here:
+ */
+body{
+  font-family: 'GothamPro' !important;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color:#F5A623;
+}
+
+div.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+
+}
+
+nav {
+
+}
+
+nav a {
+  text-decoration: none;
+  padding: 18px 20px 0 20px;
+  display: inline-block;
+}
+
+nav#rightNav a {
+  color: #F5A623;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+section.content {
+  margin: 120px 32px 0 32px;
+  justify-content: space-between;
+  display: flex;
+}
+
+
+section.hero {
+  max-width: 550px;
+}
+
+section.hero h2 {
+  max-width: 450px;
+}
+
+h1 {
+  font-family: 'GothamPro-Bold' !important;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 180%;
+}
+
+section.block {
+  margin: 80px 32px 0 32px;
+}
+
+form.subscribe {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+form.subscribe input {
+  flex: 1;
+  margin: 0 8px 15px 0;
+  padding: 20px 32px;
+
+  border: 1px solid #F5A623;
+  border-radius: 3px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+form.subscribe button, .cta button {
+  padding: 20px 60px;
+  margin-bottom: 15px;
+
+  background: #F5A623;
+  border-radius: 3px;
+  border: 1px solid #F5A623;
+  color: white;
+  font-size: 18px;
+  box-shadow: 10px 10px 10px rgba(245,166,35,0.2);
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social .icon {
+  width: 36px;
+  fill: #999;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 130px;
+  border-top: 1px solid #efefef;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px;
+}
+
+ul.language_selection {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.language_selection li {
+  padding: 10px;
+}
+
+ul.language_selection a {
+
+}
+
+div.explanations {
+  max-width: 700px;
+}
+
+h1 a {
+  border-bottom: 5px dashed black;
+}
+
+h1 a:hover {
+  border-bottom: 5px dashed #F5A623;
+}
+
+h1 a.active {
+  color: #F5A623;
+  border-bottom: 5px dashed #F5A623;
+}
+
+div.explanations div {
+  display: none;
+}
+
+
+div.explanation.active {
+  display: block;
+}
+
+div.cta {
+  padding: 30px 0;
+}
+
+@media (max-width: 860px) {
+  aside {
+     display: none;
+  }
+
+  section.content {
+    margin-top: 0;
+  }
+
+  h1 {
+    margin: 0
+  }
+
+  nav {
+    display: none;
+  }
+
+  form.subscribe {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  form.subscribe input {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  form.subscribe button {
+    display: block;
+    width: 100%;
+  }
+}
+

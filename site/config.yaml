@@ -1,0 +1,34 @@
+baseurl: /
+languageCode: en-us
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+title: Stable Unit
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
+languages:
+  en:
+    LanguageName: English
+    title: >-
+      Stable Unit: Decentralized low-volatility cryptocurrency with multi-layer
+      stabilization
+    weight: 1
+
+  ru:
+    LanguageName: Русский
+    title: >-
+      Stable Unit: Децентрализированая криптовалюта с низкой волатильностью и
+      мульти-уровневой стабилизацией
+    weight: 2
+    menu:
+      main:
+        - url: #explanation
+          name: Как это работает
+          weight: 1
+        - url: /team
+          name: Команда
+          weight: 2
+        - url: /roadmap
+          name: Стратегия
+          weight: 3
