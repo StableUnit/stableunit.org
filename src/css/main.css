@@ -2,48 +2,27 @@
   You can use import statements to include partials:
  */
 @import "imports/reset.css";
-
-
-
-@font-face {
-  font-family: 'GothamPro';
-  src: url('/fonts/GothamPro.eot?') format('eot'),
-       url('/fonts/GothamPro.otf')  format('opentype'),
-       url('/fonts/GothamPro.woff') format('woff'),
-       url('/fonts/GothamPro.ttf')  format('truetype'),
-       url('/fonts/GothamPro.svg#GothamPro') format('svg');
-}
-
-
-
-@font-face {
-  font-family: 'GothamPro-Bold';
-  src: url('/fonts/GothamPro-Bold.eot?') format('eot'),
-       url('/fonts/GothamPro-Bold.otf')  format('opentype'),
-       url('/fonts/GothamPro-Bold.woff') format('woff'),
-       url('/fonts/GothamPro-Bold.ttf')  format('truetype'),
-       url('/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
-}
-
+@import "imports/grid.css";
+@import "imports/ibm-plex.css";
 
 ::placeholder {
   color: #ccc;
 }
 
 * {
-  line-height: 180%;
+  box-sizing: border-box;
 }
 
 p em {
-  font-family: 'GothamPro-Bold' !important;
+  font-weight: bold;
   font-style: normal;
 }
 
 /*
   Or add your statements here:
  */
-body{
-  font-family: 'GothamPro' !important;
+body, html {
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 1em;
 }
 
@@ -53,22 +32,56 @@ a {
 }
 
 a:hover {
-  color:#F5A623;
+  color: #F5A623;
+}
+
+h1, h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 div.wrap {
-  max-width: 1280px;
+  margin: 86px 10px 10px;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1160px;
   margin: 0 auto;
 }
 
+.dark {
+  background-color: #151515;
+  color: white;
+}
+
+.nopadding {
+  padding: 0;
+}
+
 header {
-  margin: 32px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 10px solid white;
+  border-bottom: none;
+  padding: 18px;
+  background-color: #151515;
+}
+
+header .wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-header img {
+header .logo {
+  display: block;
+  height: 40px;
+}
 
+header .logo img {
+  height: 100%;
 }
 
 nav {
@@ -93,6 +106,451 @@ section.content {
   display: flex;
 }
 
+.heading {
+  padding-top: 110px;
+  padding-bottom: 50px;
+  background-color: #151515;
+  color: white;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+section h1 {
+  font-size: 54px;
+  line-height: 70px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.heading__title {
+  margin-bottom: 50px;
+}
+
+.mission {
+  color: white;
+  background-color: #151515;
+  padding: 100px 0 80px;
+}
+
+section h2 {
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+section.mission p {
+  color: #e6d2d1;
+}
+
+section.mission strong {
+  color: white;
+}
+
+.vision {
+  color: #151515;
+}
+
+.vision__title {
+  min-height: 530px;
+}
+
+.vision__content {
+  text-align: right;
+}
+
+.roadmap {
+  padding-top: 250px;
+  padding-bottom: 327px;
+  border-bottom: 3px solid rgba(21, 21, 21, 0.1);
+}
+
+.roadmap__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.roadmap__list:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  height: 3px;
+  background-color: #151515;
+}
+
+.roadmap__list-item {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  cursor: pointer;
+}
+
+.roadmap__description {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  transform: scaleY(0);
+  transition: transform 0.1s 0.2s;
+  transform-origin: top left;
+}
+
+.roadmap__list-item_reverse .roadmap__description {
+  right: 0;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.roadmap__text {
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 200px;
+  font-weight: 200;
+  transform: translateX(-200px);
+  transition: transform 0.2s 0.1s;
+}
+
+.roadmap__list-item_reverse .roadmap__text {
+  margin-left: 0;
+  margin-right: 20px;
+  transform: translateX(200px);
+}
+
+.roadmap__description:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #151515;
+}
+
+.roadmap__list-item_reverse .roadmap__description:before {
+  right: 0;
+}
+
+.roadmap__list-item:hover .roadmap__description {
+  transform: scaleY(1);
+  transition: transform 0.1s;
+}
+
+.roadmap__list-item:hover .roadmap__text {
+  transform: translateX(0);
+}
+
+.team {
+  background-color: rgba(249, 111, 33, 0.04);
+  margin: 10px 0 0;
+  padding: 36px 0 143px;
+}
+
+.team__title {
+  margin-bottom: 60px;
+}
+
+.team__item {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+}
+
+.team__item-image {
+  display: block;
+  margin: 17px 0;
+}
+
+.team__item-role, .team__item-subtitle {
+  font-weight: 200;
+}
+
+.team__item-title.link, .team__item-title.link:hover {
+  color: black;
+}
+
+.team__item-title.link:after {
+  background-color: black;
+}
+
+.team__item-role {
+  margin-bottom: 20px;
+}
+
+.team__more {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  top: 0;
+  background-color: #151515;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+}
+
+.team__more-arrow {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  height: 100%;
+  top: 0;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgba(21, 21, 21, 0.3);
+  cursor: pointer;
+}
+
+.team__more-arrow-image {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  transform: rotate(0);
+  transition: transform 0.2s;
+  font-weight: 500;
+}
+
+.team__more-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 24px 40px 24px 24px;
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  background-color: #151515;
+}
+
+.team__more-arrow:hover + .team__more-text {
+  transform: translateX(0);
+}
+
+.team__more-arrow:hover .team__more-arrow-image {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.team__social {
+  margin-top: 40px;
+}
+
+.contributors {
+  background-color: rgba(249, 111, 33, 0.04);
+}
+
+.contributors__title {
+  margin-bottom: 40px;
+}
+
+.contributors__item {
+  min-height: 150px;
+}
+
+.contributors__item-description p {
+  margin: 0;
+}
+
+.contributors__item-description a {
+  color: #F96F21;
+}
+
+.contributors__item-title .link, .contributors__item-title .link:hover {
+  color: black;
+}
+
+.contributors__item-title .link:after {
+  background-color: black;
+}
+
+
+.usecases {
+  padding: 100px 0 200px;
+}
+
+.usecases__heading p {
+  margin: 0 0 50px;
+}
+
+.usecases__tab {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.usecases__inner {
+  border: 1px solid #151515;
+  margin: 10px 0;
+}
+
+.usecases__tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.usecases__tab label {
+  position: relative;
+  display: block;
+  padding: 24px 98px 24px 24px;
+  cursor: pointer;
+  transition: background-color 0.35s, color 0.35s;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.usecases__tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 200;
+}
+
+.usecases__tab-content-inner {
+  padding: 24px 98px;
+}
+
+.usecases__tab input + label:after {
+  content: "<";
+  position: absolute;
+  right: 30px;
+  top: 35%;
+  transform: rotate(-90deg);
+  transition: transform 0.35s;
+}
+
+.usecases__tab input:checked ~ .usecases__tab-content {
+  max-height: 20em;
+}
+
+.usecases__tab input:checked + label {
+  background-color: #151515;
+  color: white;
+}
+
+.usecases__tab input:checked + label:after {
+  transform: rotate(90deg);
+}
+
+.daico {
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 156px;
+}
+
+.daico__header {
+  position: relative;
+}
+
+.daico__header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 12px;
+  left: 0;
+  background-color: #151515;
+}
+
+.daico__header-wrapper {
+  padding-right: 24px;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.daico h3 {
+  margin-top: 65px;
+  font-weight: 600;
+}
+
+.daico ul {
+  margin: 0 0 45px 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.daico li {
+  position: relative;
+  padding-left: 70px;
+  margin: 20px 0;
+}
+
+.daico li:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  width: 44px;
+  height: 1px;
+  background-color: #151515;
+}
+
+.link {
+  color: #F96F21;
+  display: inline-block;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #F96F21;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(1);
+  transform-origin: left center;
+  width: 100%;
+  height: 1px;
+  background-color: #F96F21;
+  transition: transform 0.25s;
+}
+
+.link.bold:after {
+  height: 2px;
+}
+
+.link:hover:after {
+  transform: scaleX(0);
+  transform-origin: right center;
+}
+
+.link.bold {
+  font-weight: bold;
+  border-bottom-width: 2px;
+}
+
+.whitepapers {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Mono", sans-serif;
+}
+
+.whitepapers li {
+  margin: 20px 0;
+}
+
+.whitepapers li:first-child {
+  margin-top: 0;
+}
+
+.whitepapers li.disabled {
+  color: #484848;
+}
 
 section.hero {
   max-width: 550px;
@@ -103,7 +561,7 @@ section.hero h2 {
 }
 
 h1 {
-  font-family: 'GothamPro-Bold' !important;
+  font-weight: bold;
   font-size: 48px;
   line-height: 140%;
 }
@@ -143,18 +601,14 @@ form.subscribe button, .cta button {
   border: 1px solid #F5A623;
   color: white;
   font-size: 18px;
-  box-shadow: 10px 10px 10px rgba(245,166,35,0.2);
+  box-shadow: 10px 10px 10px rgba(245, 166, 35, 0.2);
   outline: none;
   cursor: pointer;
   box-sizing: border-box;
 }
 
 .social {
-  text-align: center;
-}
-
-.social a {
-  text-decoration: none;
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
 .social .icon {
@@ -163,21 +617,33 @@ form.subscribe button, .cta button {
   padding: 10px;
 }
 
+.social ul {
+  list-style-type: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.social ul li {
+  display: inline-block;
+}
+
+.social li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social li a:hover {
+  color: #a1a1a1;
+}
+
 footer {
-  margin-top: 130px;
-  border-top: 1px solid #efefef;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+  background-color: #151515;
+  color: white;
+  padding: 60px 0;
 }
 
 footer p {
-  padding: 10px 32px;
-}
-
-footer a {
-  color: #F5A623;
-  text-decoration: underline;
+  margin: 0 0 20px;
 }
 
 ul.language_selection {
@@ -216,7 +682,6 @@ div.explanations div {
   display: none;
 }
 
-
 div.explanation.active {
   display: block;
 }
@@ -225,9 +690,136 @@ div.cta {
   padding: 30px 0;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 767px) {
   aside {
-     display: none;
+    display: none;
+  }
+
+  .heading {
+    padding-top: 30px;
+  }
+
+  .heading__title {
+    margin-bottom: 70px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  section.heading h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+
+  .mission {
+    padding: 40px 0 50px;
+  }
+
+  .mission h2 {
+    margin-bottom: 50px;
+  }
+
+  .roadmap {
+    padding: 80px 0;
+  }
+
+  .roadmap h1 {
+    margin-bottom: 30px;
+  }
+
+  .roadmap__list {
+    flex-direction: column;
+    min-height: 500px;
+  }
+
+  .roadmap__list:before {
+    height: 100%;
+    width: 3px;
+    left: 19px;
+    top: 0;
+  }
+
+  .roadmap__description {
+    margin-left: 50px;
+    margin-top: 0;
+    top: 20px;
+  }
+
+  .roadmap__list-item_reverse .roadmap__description {
+    right: initial;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+
+  .roadmap__list-item_reverse .roadmap__text {
+    margin: 30px 0 0 20px;
+  }
+
+  .roadmap__description:before {
+    height: 1px;
+    width: 100%;
+  }
+
+  .roadmap__list-item .roadmap__description {
+    transform: scaleX(0);
+  }
+
+  .roadmap__list-item:hover .roadmap__description {
+    transform: scaleX(1);
+  }
+
+  .roadmap__list-item .roadmap__text {
+    transform: translateY(-100%);
+  }
+
+  .roadmap__list-item:hover .roadmap__text {
+    transform: translateY(0);
+  }
+
+  .team {
+    padding: 79px 0 143px;
+  }
+
+  .team__title {
+    margin-bottom: 31px;
+  }
+
+  .team__item-inner {
+    padding-right: 40px;
+  }
+
+  .team__more-arrow {
+    width: 40px;
+  }
+
+  .team__more-arrow-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contributors__item {
+    min-height: initial;
+    margin-bottom: 40px;
+  }
+
+  .usecases__title {
+    margin-bottom: 36px;
+  }
+
+  .usecases__tab label, .usecases__tab-content-inner {
+    padding: 20px 60px 20px 20px;
+  }
+
+  .daico {
+    padding-bottom: 129px;
+  }
+
+  .daico__header {
+    margin-bottom: 40px;
+  }
+
+  .daico__header:after {
+    top: 50px;
+    width: 50%;
   }
 
   section.content {

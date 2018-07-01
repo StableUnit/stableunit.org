@@ -1,0 +1,27 @@
+<section class="stableunit" id="stableunit">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        {{ i18n "stableunit" }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-sm-push-1">
+        <ul>
+          {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
+            <li>
+              <a href="{{ .Permalink }}" class="tab {{ if (eq $index 0) }}active{{ end }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-7 col-sm-push-1">
+        {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
+        <div class="explanation {{ if (eq $index 0) }}active{{ end }}" id="{{ .Permalink }}">
+          {{ .Content }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

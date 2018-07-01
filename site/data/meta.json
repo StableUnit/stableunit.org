@@ -1,0 +1,59 @@
+{
+  "whitepapers": [
+    {
+      "title": "Read out White Paper",
+      "url": "/StableUnit-whitepaper.pdf"
+    },
+    {
+      "title": "Techy Whitepaper (in progress)",
+      "url": "/whitepaper.pdf",
+      "disabled": true
+    },
+    {
+      "title": "Simulation (in progress)",
+      "url": "/whitepaper.pdf",
+      "disabled": true
+    }
+  ],
+  "social": [
+    {
+      "title": "twitter",
+      "url": "twitter.com"
+    },
+    {
+      "title": "telegram",
+      "url": "telegram.org"
+    },
+    {
+      "title": "medium",
+      "url": "medium.com"
+    }
+  ],
+  "roadmap": [
+    {
+      "title": "Create Monte-Carlo and agent based simulation",
+      "complete": true
+    },
+    {
+      "title": "Implement ERC20 token on a test net",
+      "inProgress": true
+    },
+    {
+      "title": "Create Monte-Carlo and agent based simulation"
+    },
+    {
+      "title": "Launch on a main net with limited circulation"
+    },
+    {
+      "title": "Develop a stand-alone protocol based on Ethereum using reserves on a testnet and a smart-bridge mechanism"
+    },
+    {
+      "title": "Roll out SU protocol with limited supply",
+      "reverse": true
+    },
+    {
+      "title": "Test on a full scale network",
+      "reverse": true
+    }
+  ]
+}

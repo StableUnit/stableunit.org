@@ -30,6 +30,6 @@ window.addEventListener("load", function() {
   }
 
   for (var i = 0; i < myTabs.length; i++) {
-    myTabs[i].addEventListener("click", myTabClicks)
+    myTabs[i].addEventListener("click", myTabClicks);
   }
 });

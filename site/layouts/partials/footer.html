@@ -1,15 +1,17 @@
 <footer>
-
-  <p>
-    &copy; 2018 Stable Unit
-  </p>
-  <p>
-    <a href="/StableUnit-whitepaper.pdf">Whitepaper</a>
-
-    <a href="https://t.me/stableunit">Join on Telegram</a>
-
-    <a href="https://twitter.com/elpinguinofrio">Follow on Twitter</a>
-
-
-  </p>
+  <div class="container">
+    <div class="row title">
+      <div class="col-sm-4">
+        <p>
+          &copy; 2018 Stable Unit
+        </p>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        {{ partial "whitepapers.html" . }}
+      </div>
+      <div class="col-sm-4 col-xs-12 pull-right">
+        {{ partial "social.html" . }}
+      </div>
+    </div>
+  </div>
 </footer>

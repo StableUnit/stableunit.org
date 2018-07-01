@@ -1,0 +1,16 @@
+<section class="vision">
+  {{ with .Site.GetPage "page" "landing/_vision.md" }}
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+          <h2>{{ .Title }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+          This is famous <a class="link bold" href="https://tesla.com">Elon Musk Companies Formula</a>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</section>

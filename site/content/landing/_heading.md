@@ -1,0 +1,1 @@
+# StableUnit — Decentralized low-volatility cryptocurrency with multi-layer stabilization mechanism

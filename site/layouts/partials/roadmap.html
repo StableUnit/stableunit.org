@@ -1,0 +1,31 @@
+<section class="roadmap">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <h1>
+          {{ i18n "roadmap" }}
+        </h1>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <ul class="roadmap__list">
+          {{ range .Site.Data.meta.roadmap }}
+          <li class="roadmap__list-item{{ if .reverse }} roadmap__list-item_reverse{{ end }}">
+            {{ if .complete }}
+              <img src="/img/roadmap_done.svg" alt="done">
+            {{ else if .inProgress }}
+              <img src="/img/roadmap_progress.svg" alt="in progress">
+            {{ else }}
+              <img src="/img/roadmap_soon.svg" alt="soon">
+            {{ end }}
+            <div class="roadmap__description">
+              <div class="roadmap__text">
+                {{ .title }}
+              </div>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

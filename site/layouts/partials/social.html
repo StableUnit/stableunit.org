@@ -1,0 +1,10 @@
+<div class="social">
+  <a href="/subscribe" class="link bold"> {{ i18n "subscribe" }} →</a>
+  <ul>
+    {{ range .Site.Data.meta.social }}
+      <li>
+        <a href="{{ .url }}" target="_blank">{{ .title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</div>

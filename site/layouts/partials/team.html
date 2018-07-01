@@ -1,0 +1,40 @@
+<section class="team" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="team__title">
+          {{ i18n "team" }}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      {{ range $index, $element := where .Data.Pages "Section" "team" }}
+      <div class="coll-xs-12 col-sm-4">
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 team__item">
+            <div class="team__item-inner">
+              <img class="team__item-image" src="{{ .Params.avatar }}" alt="{{ .Title }}">
+              <a href="{{ .Permalink }}" class="link team__item-title">{{ .Title }}</a>
+              <p class="team__item-role">{{ .Params.role }}</p>
+              <p class="team__item-subtitle">{{ .Params.subtitle }}</p>
+            </div>
+            <div class="team__more-arrow">
+              <div class="team__more-arrow-image"><</div>
+            </div>
+            <div class="team__more-text">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 team__social">
+            {{ range .Params.social }}
+              <a href="{{ .url }}" class="link" target="_blank">{{ .title }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

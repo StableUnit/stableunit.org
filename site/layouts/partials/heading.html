@@ -1,0 +1,19 @@
+<section class="heading">
+  <div class="container">
+    <div class="row heading__title">
+      {{ with .Site.GetPage "page" "landing/_heading.md" }}
+        <div class="col-xs-12 col-sm-11">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        {{ partial "whitepapers.html" . }}
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        {{ partial "social.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
