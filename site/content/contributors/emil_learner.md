@@ -1,6 +1,6 @@
 ---
 title: "Emil Learner"
-link: "https://linkedin.com"
+link: "https://github.com/neex"
 weight: 2
 ---
 Security

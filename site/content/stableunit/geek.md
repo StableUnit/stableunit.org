@@ -2,8 +2,11 @@
 title: "Geeks"
 weight: 2
 ---
-Bitcoin is an amazing new form of money that has defied the odds to gain increasing importance as money in the world today.
-Despite its great features that help make Bitcoin an unstoppable investment it has a problem; the price swings prevent Bitcoin from gaining even more important as money. 
-Stable coins are a new type of cryptocurrency that is entirely digital but whose price is always $1 US. 
-Our stable coin, called StableUnit, is a new advanced type of stablecoin that will have features that also make it unstoppable and uncensorable. 
-These features include a multi-layer stability mechanism which helps ensure that the price of the stablecoin is always the same as holding an equivalent amount of U.S. dollars.
+Bitcoin introduced a purely peer-to-peer version of electronic cash which allows online payments to be sent from one party to another without going through a financial institution. 
+Despite all of its advantages, predefined finite monetary supply inevitably leads to price volatility which makes Bitcoin suboptimal as a medium of exchange, store of value or unit of account. 
+We propose a solution to the price stabilization problem using a decentralized currency unit which evolves from being collateral-backed to being regulated by an autonomous monetary policy as the network receives wider adoption. 
+The system defines a soft peg to any measurable unit of value with low-volatility purchase power, such as the US dollar of 2018, basket of currencies or CPI, which it maintains using a collateralized stabilization fund and if necessary expands and contracts available money supply via the issuing of bonds, share dilution and temporary parking of funds. 
+Ownership of the network is distributed to shareholders who form a decentralized autonomous organization capable of changing some parameters of the system through a voting consensus mechanism. 
+This creates a new type of crypto-asset which combines the advantages of Bitcoin with the predictable purchase power of the US dollar.
+
+[Read more](https://stableunit.org/StableUnit-whitepaper.pdf) 

@@ -32,27 +32,34 @@
   "roadmap": [
     {
       "title": "Create Monte-Carlo and agent based simulation",
+      "width": 20,
       "complete": true
     },
     {
       "title": "Implement ERC20 token on a test net",
+      "width": 50,
       "inProgress": true
     },
     {
-      "title": "Create Monte-Carlo and agent based simulation"
+      "title": "Create Monte-Carlo and agent based simulation",
+      "width": 30
     },
     {
-      "title": "Launch on a main net with limited circulation"
+      "title": "Launch on a main net with limited circulation",
+      "width": 30
     },
     {
-      "title": "Develop a stand-alone protocol based on Ethereum using reserves on a testnet and a smart-bridge mechanism"
+      "title": "Develop a stand-alone protocol based on Ethereum using reserves on a testnet and a smart-bridge mechanism",
+      "width": 60
     },
     {
       "title": "Roll out SU protocol with limited supply",
+      "width": 40,
       "reverse": true
     },
     {
       "title": "Test on a full scale network",
+      "width": 20,
       "reverse": true
     }
   ]

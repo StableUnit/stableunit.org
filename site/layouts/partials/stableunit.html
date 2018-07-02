@@ -7,17 +7,21 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-3 col-sm-push-1">
-        <ul>
+        <ul class="stableunit__slider-buttons">
           {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
-            <li>
-              <a href="{{ .Permalink }}" class="tab {{ if (eq $index 0) }}active{{ end }}">{{ .Title }}</a>
+            <li class="stableunit__slider-li">
+              {{ if .Params.disabled }}
+                <span class="stableunit__slider-button link disabled bold">{{ .Title }}</span>
+              {{ else }}
+                <a href="{{ .Permalink }}" class="link bold black stableunit__slider-button {{ if (eq $index 0) }}stableunit__slider-button_active{{ end }}">{{ .Title }}</a>
+              {{ end }}
             </li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-7 col-sm-push-1">
+      <div class="col-xs-12 col-sm-7 col-sm-push-1 stableunit__slider-slides">
         {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
-        <div class="explanation {{ if (eq $index 0) }}active{{ end }}" id="{{ .Permalink }}">
+        <div class="stableunit__slider-item {{ if (eq $index 0) }}stableunit__slider-item_active{{ end }} content" id="{{ .Permalink }}">
           {{ .Content }}
         </div>
         {{ end }}

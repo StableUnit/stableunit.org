@@ -21,6 +21,7 @@ html {
   font-size: 18px;
   line-height: 1.3em;
   font-weight: 300;
+  color: #151515;
 }
 
 body {
@@ -29,6 +30,28 @@ body {
 
 a {
   text-decoration: none;
+  color: #F96F21;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content li {
+  position: relative;
+  padding-left: 70px;
+  margin: 20px 0;
+}
+
+.content li:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  width: 44px;
+  height: 1px;
+  background-color: #151515;
 }
 
 h1, h2 {
@@ -134,6 +157,16 @@ section h1 {
     width: 100%;
 }
 
+.button {
+  display: inline-block;
+  border: 2px solid #F96F21;
+  padding: 35px;
+}
+
+.button .link {
+  line-height: 2em;
+}
+
 section h2 {
   margin: 16px 0;
 }
@@ -153,7 +186,6 @@ section.mission strong {
 
 .vision__musk {
   font-weight: 200;
-  font-size: 18px;
 }
 
 .vision .separator {
@@ -166,6 +198,45 @@ section.mission strong {
 
 .vision__content {
   text-align: right;
+}
+
+.stableunit {
+  padding-top: 40px;
+}
+
+.stableunit__slider-buttons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stableunit__slider-li {
+  margin-bottom: 30px;
+}
+
+.stableunit__slider-button {
+  line-height: 2em;
+}
+
+.stableunit__slider-item {
+  display: none;
+}
+
+.stableunit__slider-item_active {
+  display: block;
+}
+
+a.stableunit__slider-button:after {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+a.stableunit__slider-button_active:hover:after {
+  transform: none;
+}
+
+a.stableunit__slider-button_active:after {
+  transform: scaleX(1);
+  transform-origin: right center;
 }
 
 .roadmap {
@@ -194,13 +265,43 @@ section.mission strong {
 }
 
 .roadmap__list-item {
+  flex-grow: 1;
+  padding-left: 1em;
   position: relative;
   width: 43px;
   height: 43px;
   cursor: pointer;
 }
 
+.roadmap__list-item_reverse {
+  padding-left: 0;
+  padding-right: 1em;
+  text-align: right;
+}
+
+.roadmap__list-item img {
+  position: relative;
+}
+
+.roadmap__list-item_complete:before, .roadmap__list-item_progress:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 3px;
+  background-color: #F96F21;
+}
+
+.roadmap__list-item_complete:before {
+  width: 100%;
+}
+
+.roadmap__list-item_progress:before {
+  width: 1em;
+}
+
 .roadmap__description {
+  font-size: 1em;
   position: absolute;
   margin-left: 20px;
   margin-top: 20px;
@@ -213,10 +314,11 @@ section.mission strong {
 .roadmap__list-item_reverse .roadmap__description {
   right: 0;
   margin-left: 0;
-  margin-right: 20px;
+  margin-right: calc(1em + 20px);
 }
 
 .roadmap__text {
+  font-size: 1rem;
   margin-left: 20px;
   margin-top: 30px;
   width: 200px;
@@ -256,7 +358,7 @@ section.mission strong {
 .team {
   background-color: rgba(249, 111, 33, 0.04);
   margin: 10px 0 0;
-  padding: 36px 0 90px;
+  padding: 56px 0 90px;
 }
 
 .team__title {
@@ -276,14 +378,6 @@ section.mission strong {
 
 .team__item-role, .team__item-subtitle {
   font-weight: 200;
-}
-
-.team__item-title.link, .team__item-title.link:hover {
-  color: black;
-}
-
-.team__item-title.link:after {
-  background-color: black;
 }
 
 .team__item-role {
@@ -364,27 +458,19 @@ section.mission strong {
 
 .contributors__item {
   min-height: 150px;
+  margin-bottom: 50px;
 }
 
 .contributors__item-description p {
   margin: 0;
 }
 
-.contributors__item-description a {
-  color: #F96F21;
+.contributors__item-title  {
+  margin-bottom: 5px;
 }
-
-.contributors__item-title .link, .contributors__item-title .link:hover {
-  color: black;
-}
-
-.contributors__item-title .link:after {
-  background-color: black;
-}
-
 
 .usecases {
-  padding: 100px 0 200px;
+  padding: 100px 0;
 }
 
 .usecases__heading p {
@@ -450,7 +536,7 @@ section.mission strong {
 }
 
 .daico {
-  padding-bottom: 156px;
+  padding-bottom: 120px;
 }
 
 .daico__header {
@@ -481,24 +567,6 @@ section.mission strong {
 
 .daico ul {
   margin: 0 0 45px 0;
-  list-style-type: none;
-  padding: 0;
-}
-
-.daico li {
-  position: relative;
-  padding-left: 70px;
-  margin: 20px 0;
-}
-
-.daico li:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 12px;
-  width: 44px;
-  height: 1px;
-  background-color: #151515;
 }
 
 .link {
@@ -507,6 +575,7 @@ section.mission strong {
   line-height: 1.5em;
   position: relative;
   cursor: pointer;
+  transition: color 0.25s;
 }
 
 .link:hover {
@@ -530,14 +599,33 @@ section.mission strong {
   height: 2px;
 }
 
+.link.disabled {
+  color: rgba(21, 21, 21, 0.3);
+}
+
+.link.disabled:after {
+  display: none;
+}
+
 .link:hover:after {
   transform: scaleX(0);
   transform-origin: right center;
 }
 
 .link.bold {
-  font-weight: bold;
   border-bottom-width: 2px;
+}
+
+.black {
+  color: #151515;
+}
+
+.link.black .arrow {
+  color: #F96F21;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .whitepapers {
@@ -639,6 +727,15 @@ footer p {
     padding: 60px 20px 60px 34px;
   }
 
+  .stableunit__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stableunit__slider-li {
+    margin-bottom: 0;
+  }
+
   .roadmap {
     padding: 80px 0;
   }
@@ -650,7 +747,6 @@ footer p {
   .roadmap__list {
     flex-direction: column;
     min-height: 500px;
-    padding: 20px 0;
   }
 
   .roadmap__list-item {
@@ -658,12 +754,29 @@ footer p {
     height: auto;
     display: flex;
     align-items: flex-start;
+    padding-left: 0;
+    padding-top: 1em;
+  }
+
+  .roadmap__list-item_complete:before, .roadmap__list-item_progress:before {
+    top: 0;
+    left: 20px;
+    width: 3px;
+    background-color: #F96F21;
+  }
+
+  .roadmap__list-item_complete:before {
+    height: 100%;
+  }
+
+  .roadmap__list-item_progress:before {
+    height: 1em;
   }
 
   .roadmap__list:before {
     height: 100%;
     width: 3px;
-    left: 19px;
+    left: 20px;
     top: 0;
   }
 
@@ -701,7 +814,7 @@ footer p {
   }
 
   .team {
-    padding: 50px 0 0;
+    padding: 50px 0 20px;
   }
 
   .team__col {
@@ -751,18 +864,22 @@ footer p {
     margin: 0;
   }
 
+  .contributors {
+    padding-bottom: 50px;
+  }
+
   .contributors__item {
     min-height: initial;
     margin-bottom: 40px;
   }
 
   .usecases {
-    padding-top: 70px;
-    padding-bottom: 155px;
+    padding-top: 40px;
+    padding-bottom: 110px;
   }
 
   .usecases__title {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
   }
 
   .usecases__tab label, .usecases__tab-content-inner {
@@ -770,7 +887,7 @@ footer p {
   }
 
   .daico {
-    padding-bottom: 129px;
+    padding-bottom: 85px;
   }
 
   .daico__header {
@@ -778,7 +895,7 @@ footer p {
   }
 
   .daico__header:after {
-    top: 50px;
+    top: 60px;
     width: 50%;
   }
 }

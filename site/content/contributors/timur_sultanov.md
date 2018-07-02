@@ -1,6 +1,6 @@
 ---
 title: "Timur Sultanov"
-link: "https://linkedin.com"
+link: "https://www.linkedin.com/in/timursultanov1991/"
 weight: 1
 ---
 Investment Analyst at [m8vp.com](https://m8vp.com)

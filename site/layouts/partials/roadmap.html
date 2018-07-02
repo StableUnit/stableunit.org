@@ -9,7 +9,7 @@
       <div class="col-xs-12 col-sm-12 col-md-9">
         <ul class="roadmap__list">
           {{ range .Site.Data.meta.roadmap }}
-          <li class="roadmap__list-item{{ if .reverse }} roadmap__list-item_reverse{{ end }}">
+          <li class="roadmap__list-item{{ if .complete }} roadmap__list-item_complete{{ end }}{{ if .inProgress }} roadmap__list-item_progress{{ end }}{{ if .reverse }} roadmap__list-item_reverse{{ end }}" style="font-size: {{ .width }}px">
             {{ if .complete }}
               <img src="/img/roadmap_done.svg" alt="done">
             {{ else if .inProgress }}

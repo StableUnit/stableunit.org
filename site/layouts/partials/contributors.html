@@ -9,7 +9,7 @@
       {{ range $index, $element := where .Data.Pages "Section" "contributors" }}
         <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
           <div class="contributors__item-title">
-            <a class="link bold" href="{{ .Params.link }}">{{ .Title }}</a>
+            <a class="link bold black" href="{{ .Params.link }}" target="_blank" rel="noreferrer">{{ .Title }}</a>
           </div>
           <div class="contributors__item-description">
             {{ .Content }}
@@ -17,7 +17,13 @@
         </div>
       {{ end }}
       <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
-        <a class="link bold" href="/contributors/join">{{ i18n "join" }}  →</a>
+        <a href="/contributors/join">
+            <span class="button">
+              <span class="link bold black">
+                {{ i18n "join" }} <span class="arrow">→</span>
+              </span>
+            </span>
+        </a>
       </div>
     </div>
   </div>

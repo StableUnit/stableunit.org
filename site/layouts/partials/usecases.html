@@ -33,7 +33,13 @@
           {{ .Content }}
         </div>
         <div class="col-xs-12 col-sm-9 col-sm-push-3">
-          <a class="link bold" href="{{ .Params.link }}">{{ .Title }}  →</a>
+          <a href="{{ .Params.link }}">
+            <span class="button">
+              <span class="link bold black">
+                {{ .Title }} <span class="arrow">→</span>
+              </span>
+            </span>
+          </a>
         </div>
       {{ end }}
     </div>

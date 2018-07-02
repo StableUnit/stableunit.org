@@ -1,6 +1,6 @@
 ---
 title: "David Genest"
-link: "https://linkedin.com"
+link: "https://www.linkedin.com/in/dgenest/"
 weight: 4
 ---
 Analyst & Financial Modeler
