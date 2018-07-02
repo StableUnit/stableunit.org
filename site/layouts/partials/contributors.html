@@ -1,13 +1,13 @@
 <section class="contributors">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 contributors__title">
-        {{ i18n "stableunit" }}
+      <div class="col-xs-12">
+        <h2 class="contributors__title">{{ i18n "contributors" }}</h2>
       </div>
     </div>
     <div class="row">
       {{ range $index, $element := where .Data.Pages "Section" "contributors" }}
-        <div class="col-xs-12 col-sm-4 contributors__item">
+        <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
           <div class="contributors__item-title">
             <a class="link bold" href="{{ .Params.link }}">{{ .Title }}</a>
           </div>
@@ -16,7 +16,7 @@
           </div>
         </div>
       {{ end }}
-      <div class="col-xs-12 col-sm-4 contributors__item">
+      <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
         <a class="link bold" href="/contributors/join">{{ i18n "join" }}  →</a>
       </div>
     </div>

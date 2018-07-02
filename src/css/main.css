@@ -13,40 +13,46 @@
   box-sizing: border-box;
 }
 
-p em {
-  font-weight: bold;
-  font-style: normal;
-}
-
 /*
   Or add your statements here:
  */
-body, html {
+html {
   font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+body {
   font-size: 1em;
 }
 
 a {
   text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  color: #F5A623;
 }
 
 h1, h2 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight: 400;
 }
 
 div.wrap {
-  margin: 86px 10px 10px;
-  position: relative;
-}
-
-.wrapper {
-  max-width: 1160px;
-  margin: 0 auto;
+  margin: 76px 10px 10px;
 }
 
 .dark {
@@ -54,8 +60,13 @@ div.wrap {
   color: white;
 }
 
-.nopadding {
-  padding: 0;
+.separator {
+  background-color : rgba(255, 255, 255, 0.1);
+  height: 3px;
+}
+
+.separator.dark {
+  background-color: rgba(21, 21, 21, 0.1);
 }
 
 header {
@@ -65,6 +76,7 @@ header {
   left: 0;
   width: 100%;
   border: 10px solid white;
+  border-top: none;
   border-bottom: none;
   padding: 18px;
   background-color: #151515;
@@ -84,22 +96,6 @@ header .logo img {
   height: 100%;
 }
 
-nav {
-
-}
-
-nav a {
-  text-decoration: none;
-  padding: 18px 20px 0 20px;
-  display: inline-block;
-}
-
-nav#rightNav a {
-  color: #F5A623;
-  text-decoration: underline;
-  font-size: 18px;
-}
-
 section.content {
   margin: 120px 32px 0 32px;
   justify-content: space-between;
@@ -108,20 +104,19 @@ section.content {
 
 .heading {
   padding-top: 110px;
-  padding-bottom: 50px;
   background-color: #151515;
   color: white;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
 }
 
 section h1 {
-  font-size: 54px;
-  line-height: 70px;
-  font-weight: 500;
   margin: 0;
 }
 
 .heading__title {
+  margin-bottom: 50px;
+}
+
+.heading__media {
   margin-bottom: 50px;
 }
 
@@ -132,9 +127,6 @@ section h1 {
 }
 
 section h2 {
-  font-size: 36px;
-  line-height: 47px;
-  font-weight: 500;
   margin: 16px 0;
 }
 
@@ -148,6 +140,11 @@ section.mission strong {
 
 .vision {
   color: #151515;
+  padding-top: 100px;
+}
+
+.vision .separator {
+  margin-top: 100px;
 }
 
 .vision__title {
@@ -161,7 +158,7 @@ section.mission strong {
 .roadmap {
   padding-top: 250px;
   padding-bottom: 327px;
-  border-bottom: 3px solid rgba(21, 21, 21, 0.1);
+  border-bottom: 1px solid rgba(21, 21, 21, 0.1);
 }
 
 .roadmap__list {
@@ -216,6 +213,7 @@ section.mission strong {
 }
 
 .roadmap__list-item_reverse .roadmap__text {
+  text-align: right;
   margin-left: 0;
   margin-right: 20px;
   transform: translateX(200px);
@@ -245,7 +243,7 @@ section.mission strong {
 .team {
   background-color: rgba(249, 111, 33, 0.04);
   margin: 10px 0 0;
-  padding: 36px 0 143px;
+  padding: 36px 0 90px;
 }
 
 .team__title {
@@ -320,10 +318,13 @@ section.mission strong {
   left: 0;
   width: 100%;
   height: 100%;
-  color: white;
-  padding: 24px 40px 24px 24px;
   transform: translateX(100%);
   transition: transform 0.2s;
+}
+
+.team__more-text, .team__more-mobile-text {
+  padding: 24px 40px 24px 24px;
+  color: white;
   background-color: #151515;
 }
 
@@ -374,7 +375,7 @@ section.mission strong {
 }
 
 .usecases__heading p {
-  margin: 0 0 50px;
+  margin-bottom: 50px;
 }
 
 .usecases__tab {
@@ -400,18 +401,13 @@ section.mission strong {
   padding: 24px 98px 24px 24px;
   cursor: pointer;
   transition: background-color 0.35s, color 0.35s;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .usecases__tab-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height .35s;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 200;
 }
 
 .usecases__tab-content-inner {
@@ -431,7 +427,7 @@ section.mission strong {
   max-height: 20em;
 }
 
-.usecases__tab input:checked + label {
+.usecases__tab input:checked + label, .usecases__tab label:hover {
   background-color: #151515;
   color: white;
 }
@@ -441,8 +437,6 @@ section.mission strong {
 }
 
 .daico {
-  font-size: 18px;
-  line-height: 23px;
   padding-bottom: 156px;
 }
 
@@ -455,7 +449,7 @@ section.mission strong {
   position: absolute;
   width: 100%;
   height: 1px;
-  top: 12px;
+  top: 23px;
   left: 0;
   background-color: #151515;
 }
@@ -467,7 +461,7 @@ section.mission strong {
   z-index: 5;
 }
 
-.daico h3 {
+.daico h4 {
   margin-top: 65px;
   font-weight: 600;
 }
@@ -497,7 +491,7 @@ section.mission strong {
 .link {
   color: #F96F21;
   display: inline-block;
-  line-height: 20px;
+  line-height: 1.5em;
   position: relative;
   cursor: pointer;
 }
@@ -540,75 +534,16 @@ section.mission strong {
   font-family: "IBM Plex Mono", sans-serif;
 }
 
-.whitepapers li {
+.whitepapers__item {
   margin: 20px 0;
 }
 
-.whitepapers li:first-child {
+.whitepapers__item:first-child {
   margin-top: 0;
 }
 
-.whitepapers li.disabled {
+.whitepapers__item.disabled {
   color: #484848;
-}
-
-section.hero {
-  max-width: 550px;
-}
-
-section.hero h2 {
-  max-width: 450px;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 140%;
-}
-
-h2 {
-  font-size: 18px;
-  line-height: 180%;
-}
-
-section.block {
-  margin: 80px 32px 0 32px;
-}
-
-form.subscribe {
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-form.subscribe input {
-  flex: 1;
-  margin: 0 8px 15px 0;
-  padding: 20px 32px;
-
-  border: 1px solid #F5A623;
-  border-radius: 3px;
-  font-size: 18px;
-  box-sizing: border-box;
-}
-
-form.subscribe button, .cta button {
-  padding: 20px 60px;
-  margin-bottom: 15px;
-
-  background: #F5A623;
-  border-radius: 3px;
-  border: 1px solid #F5A623;
-  color: white;
-  font-size: 18px;
-  box-shadow: 10px 10px 10px rgba(245, 166, 35, 0.2);
-  outline: none;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-.social {
-  font-family: "IBM Plex Mono", sans-serif;
 }
 
 .social .icon {
@@ -617,23 +552,32 @@ form.subscribe button, .cta button {
   padding: 10px;
 }
 
-.social ul {
+.social__list {
   list-style-type: none;
   margin: 24px 0 0;
   padding: 0;
 }
 
-.social ul li {
+.social__item {
   display: inline-block;
 }
 
-.social li a {
+.social__item-link {
   color: white;
   text-decoration: none;
+  position: relative;
 }
 
-.social li a:hover {
+.social__item-link:hover {
   color: #a1a1a1;
+}
+
+.social__item:after {
+  content: "\00a0—\00a0";
+}
+
+.social__item:last-child:after {
+  content: "";
 }
 
 footer {
@@ -646,53 +590,9 @@ footer p {
   margin: 0 0 20px;
 }
 
-ul.language_selection {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-ul.language_selection li {
-  padding: 10px;
-}
-
-ul.language_selection a {
-
-}
-
-div.explanations {
-  max-width: 700px;
-}
-
-h1 a {
-  border-bottom: 5px dashed black;
-  margin-right: 10px;
-}
-
-h1 a:hover {
-  border-bottom: 5px dashed #F5A623;
-}
-
-h1 a.active {
-  color: #F5A623;
-  border-bottom: 5px dashed #F5A623;
-}
-
-div.explanations div {
-  display: none;
-}
-
-div.explanation.active {
-  display: block;
-}
-
-div.cta {
-  padding: 30px 0;
-}
-
 @media (max-width: 767px) {
-  aside {
-    display: none;
+  html {
+    font-size: 14px;
   }
 
   .heading {
@@ -701,13 +601,15 @@ div.cta {
 
   .heading__title {
     margin-bottom: 70px;
-    font-size: 32px;
-    line-height: 42px;
   }
 
-  section.heading h1 {
-    font-size: 42px;
-    line-height: 55px;
+  .social__item {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .social__item:after {
+    content: "";
   }
 
   .mission {
@@ -729,6 +631,14 @@ div.cta {
   .roadmap__list {
     flex-direction: column;
     min-height: 500px;
+    padding: 20px 0;
+  }
+
+  .roadmap__list-item {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
   }
 
   .roadmap__list:before {
@@ -738,20 +648,13 @@ div.cta {
     top: 0;
   }
 
-  .roadmap__description {
-    margin-left: 50px;
-    margin-top: 0;
-    top: 20px;
-  }
-
-  .roadmap__list-item_reverse .roadmap__description {
-    right: initial;
-    margin-left: 50px;
-    margin-top: 0;
-  }
-
-  .roadmap__list-item_reverse .roadmap__text {
-    margin: 30px 0 0 20px;
+  .roadmap__description, .roadmap__list-item_reverse .roadmap__description {
+    width: 100%;
+    position: relative;
+    overflow: initial;
+    transform: none;
+    margin: 21px 0 0 10px;
+    text-align: left;
   }
 
   .roadmap__description:before {
@@ -759,32 +662,57 @@ div.cta {
     width: 100%;
   }
 
-  .roadmap__list-item .roadmap__description {
-    transform: scaleX(0);
+  .roadmap__text, .roadmap__list-item_reverse .roadmap__text {
+    transform: none;
+    padding-left: 30px;
+    margin-left: 0;
+    width: 100%;
   }
 
-  .roadmap__list-item:hover .roadmap__description {
-    transform: scaleX(1);
+  .roadmap__list-item_reverse .roadmap__description {
+    right: initial;
   }
 
-  .roadmap__list-item .roadmap__text {
-    transform: translateY(-100%);
+  .roadmap__list-item_reverse .roadmap__text {
+    text-align: left;
   }
 
-  .roadmap__list-item:hover .roadmap__text {
-    transform: translateY(0);
+  .roadmap__list-item_reverse .roadmap__description:before {
+    right: initial;
   }
 
   .team {
-    padding: 79px 0 143px;
+    padding: 50px 0 0;
+  }
+
+  .team__col {
+    margin-bottom: 62px;
+  }
+
+  .team__item {
+    height: auto;
   }
 
   .team__title {
     margin-bottom: 31px;
   }
 
+  .team__item-image {
+    margin: 0 20px 0 0;
+  }
+
   .team__item-inner {
-    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .team__item-role {
+    margin: 1em 0;
+  }
+
+  .team__item-subtitle {
+    margin-bottom: 0;
   }
 
   .team__more-arrow {
@@ -796,9 +724,22 @@ div.cta {
     height: 40px;
   }
 
+  .team__more-mobile-text {
+    padding: 30px;
+  }
+
+  .team__more-mobile-text p {
+    margin: 0;
+  }
+
   .contributors__item {
     min-height: initial;
     margin-bottom: 40px;
+  }
+
+  .usecases {
+    padding-top: 70px;
+    padding-bottom: 155px;
   }
 
   .usecases__title {
@@ -820,34 +761,6 @@ div.cta {
   .daico__header:after {
     top: 50px;
     width: 50%;
-  }
-
-  section.content {
-    margin-top: 0;
-  }
-
-  h1 {
-    margin: 0
-  }
-
-  nav {
-    display: none;
-  }
-
-  form.subscribe {
-    display: block;
-    width: 100%;
-    padding-top: 20px;
-  }
-
-  form.subscribe input {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  form.subscribe button {
-    display: block;
-    width: 100%;
   }
 }
 

@@ -3,9 +3,9 @@
     <div class="row">
       {{ with .Site.GetPage "page" "landing/_daico" }}
         <div class="col-xs-12 col-sm-3">
-          <p class="daico__header">
+          <h2 class="daico__header">
             <span class="daico__header-wrapper">{{ .Title }}</span>
-          </p>
+          </h2>
         </div>
         <div class="col-xs-12 col-sm-9">
           {{ .Content }}

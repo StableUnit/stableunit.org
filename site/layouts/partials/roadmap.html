@@ -1,12 +1,12 @@
-<section class="roadmap">
+<section class="roadmap" id="roadmap">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-3">
+      <div class="col-xs-12 col-sm-12 col-md-3">
         <h1>
           {{ i18n "roadmap" }}
         </h1>
       </div>
-      <div class="col-xs-12 col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-9">
         <ul class="roadmap__list">
           {{ range .Site.Data.meta.roadmap }}
           <li class="roadmap__list-item{{ if .reverse }} roadmap__list-item_reverse{{ end }}">

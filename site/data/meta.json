@@ -18,15 +18,15 @@
   "social": [
     {
       "title": "twitter",
-      "url": "twitter.com"
+      "url": "https://twitter.com"
     },
     {
       "title": "telegram",
-      "url": "telegram.org"
+      "url": "https://telegram.org"
     },
     {
       "title": "medium",
-      "url": "medium.com"
+      "url": "https://medium.com"
     }
   ],
   "roadmap": [

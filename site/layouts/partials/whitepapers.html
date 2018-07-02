@@ -1,11 +1,11 @@
 <ul class="whitepapers">
   {{ range .Site.Data.meta.whitepapers }}
     {{ if .disabled }}
-      <li class="disabled">
+      <li class="whitepapers__item disabled">
         <span>{{ .title }}</span>
       </li>
     {{ else }}
-      <li>
+      <li class="whitepapers__item">
         <a class="link bold" href="{{ .url }}" target="_blank">{{ .title }} →</a>
       </li>
     {{ end }}

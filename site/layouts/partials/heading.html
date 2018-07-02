@@ -1,4 +1,4 @@
-<section class="heading">
+<section class="heading" id="heading">
   <div class="container">
     <div class="row heading__title">
       {{ with .Site.GetPage "page" "landing/_heading.md" }}
@@ -7,7 +7,7 @@
         </div>
       {{ end }}
     </div>
-    <div class="row">
+    <div class="row heading__media">
       <div class="col-sm-6 col-xs-12">
         {{ partial "whitepapers.html" . }}
       </div>
@@ -15,5 +15,6 @@
         {{ partial "social.html" . }}
       </div>
     </div>
+    <div class="separator"></div>
   </div>
 </section>

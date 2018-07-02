@@ -1,9 +1,9 @@
 <div class="social">
   <a href="/subscribe" class="link bold"> {{ i18n "subscribe" }} →</a>
-  <ul>
+  <ul class="social__list">
     {{ range .Site.Data.meta.social }}
-      <li>
-        <a href="{{ .url }}" target="_blank">{{ .title }}</a>
+      <li class="social__item">
+        <a class="social__item-link" href="{{ .url }}" target="_blank">{{ .title }}</a>
       </li>
     {{ end }}
   </ul>
