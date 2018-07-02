@@ -126,6 +126,14 @@ section h1 {
   padding: 100px 0 80px;
 }
 
+.scheme {
+  margin: 20px 0 40px;
+}
+
+.scheme svg {
+    width: 100%;
+}
+
 section h2 {
   margin: 16px 0;
 }
@@ -140,7 +148,12 @@ section.mission strong {
 
 .vision {
   color: #151515;
-  padding-top: 100px;
+  padding-top: 40px;
+}
+
+.vision__musk {
+  font-weight: 200;
+  font-size: 18px;
 }
 
 .vision .separator {
@@ -618,6 +631,12 @@ footer p {
 
   .mission h2 {
     margin-bottom: 50px;
+  }
+
+  .vision__musk {
+    background-color: #151515;
+    color: white;
+    padding: 60px 20px 60px 34px;
   }
 
   .roadmap {
