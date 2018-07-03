@@ -1,35 +1,72 @@
-window.addEventListener("load", function() {
-
+window.addEventListener('load', function() {
   // store tabs variable
-  var myTabs = document.querySelectorAll("a.stableunit__slider-button");
+  const myTabs = document.getElementsByClassName('.stableunit__slider-button');
+  const headerLinks = document.getElementsByClassName('header__nav-item');
+  const sections = [];
+  const offset = 76;
+  let selectedIndex = -1;
+
+  for (let j = 0; j < headerLinks.length; j++) {
+    const section = headerLinks[j].getAttribute('href');
+
+    if (section[0] === '#') {
+      sections.push(section);
+    }
+  }
 
   function myTabClicks(tabClickEvent) {
-
-    for (var i = 0; i < myTabs.length; i++) {
-      myTabs[i].classList.remove("stableunit__slider-button_active");
+    for (let i = 0; i < myTabs.length; i++) {
+      myTabs[i].classList.remove('stableunit__slider-button_active');
     }
 
-    var clickedTab = tabClickEvent.currentTarget;
+    const clickedTab = tabClickEvent.currentTarget;
 
-    clickedTab.classList.add("stableunit__slider-button_active");
+    clickedTab.classList.add('stableunit__slider-button_active');
 
     tabClickEvent.preventDefault();
 
-    var myContentPanes = document.querySelectorAll(".stableunit__slider-item");
+    const myContentPanes = document.getElementsByClassName('stableunit__slider-item');
 
-    for (i = 0; i < myContentPanes.length; i++) {
-      myContentPanes[i].classList.remove("stableunit__slider-item_active");
+    for (let i = 0; i < myContentPanes.length; i++) {
+      myContentPanes[i].classList.remove('stableunit__slider-item_active');
     }
 
-    var anchorReference = tabClickEvent.target;
-    var activePaneId = anchorReference.getAttribute("href");
-    var activePane = document.getElementById(activePaneId);
+    const anchorReference = tabClickEvent.target;
+    const activePaneId = anchorReference.getAttribute('href');
+    const activePane = document.getElementById(activePaneId);
 
-    activePane.classList.add("stableunit__slider-item_active");
-
+    activePane.classList.add('stableunit__slider-item_active');
   }
 
-  for (var i = 0; i < myTabs.length; i++) {
-    myTabs[i].addEventListener("click", myTabClicks);
+  for (let i = 0; i < myTabs.length; i++) {
+    myTabs[i].addEventListener('click', myTabClicks);
   }
+
+  window.addEventListener('scroll', function() {
+    for (let k = 0; k < sections.length; k++) {
+      const pageOffset = window.pageYOffset;
+      const currentSection = document.getElementById(sections[k].slice(1));
+      const currentSectionHeight = currentSection.offsetHeight;
+      const currentSectionOffset = currentSection.offsetTop;
+
+      if (currentSectionOffset < pageOffset + offset && pageOffset + offset < currentSectionHeight + currentSectionOffset + offset) {
+        if (selectedIndex === k) {
+          return;
+        }
+
+        selectedIndex = k;
+        break;
+      }
+    }
+
+    if (sections[selectedIndex]) {
+      for (let l = 0; l < headerLinks.length; l++) {
+        if (headerLinks[l] && headerLinks[l].getAttribute('href') === sections[selectedIndex]) {
+          headerLinks[l].classList.add('header__nav-item_active');
+        } else {
+          headerLinks[l].classList.remove('header__nav-item_active');
+        }
+      }
+    }
+  });
 });

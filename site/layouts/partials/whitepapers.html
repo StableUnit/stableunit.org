@@ -1,7 +1,7 @@
 <ul class="whitepapers">
   {{ range .Site.Data.meta.whitepapers }}
     {{ if .disabled }}
-      <li class="whitepapers__item disabled">
+      <li class="whitepapers__item whitepapers__item_disabled">
         <span>{{ .title }}</span>
       </li>
     {{ else }}

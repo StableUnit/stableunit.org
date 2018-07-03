@@ -1,13 +1,16 @@
 <header>
-  <div class="wrapper">
-      <a href="/" class="logo">
-          <img src="/img/stableunit-logo-horizontal.svg" alt="Stable Unit"/>
-      </a>
-
-      <nav>
-          {{ range .Site.Menus.main }}
-          <a href="{{.URL | absLangURL}}">{{.Name}}</a>
-          {{ end }}
-      </nav>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 wrapper">
+                <a href="/" class="logo">
+                    <img src="/img/stableunit-logo-horizontal.svg" alt="Stable Unit"/>
+                </a>
+                <nav class="header__nav hidden-xs">
+                    {{ range .Site.Menus.main }}
+                    <a class="header__nav-item underlined bold" data-element="{{ .Pre }}" href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end }}
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
