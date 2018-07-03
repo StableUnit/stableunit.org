@@ -93,6 +93,9 @@ div.wrap {
 }
 
 header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -126,6 +129,15 @@ header .logo img {
 
 .header__nav-item {
   color: rgba(255, 255, 255, 0.5);
+  margin: 0 10px;
+}
+
+.header__nav-item:first-child {
+  margin-left: 0;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
 }
 
 .header__nav-item:hover {
