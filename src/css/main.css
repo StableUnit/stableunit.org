@@ -797,7 +797,8 @@ footer p {
     transform: translateX(100%);
     transition: transform 0.25s, opacity 0.25s;
     transform-origin: right center;
-    border: 5px solid rgba(255, 255, 255, 0);
+    border: 5px solid white;
+    padding: 0 15px;
     border-top-width: 0;
   }
 
