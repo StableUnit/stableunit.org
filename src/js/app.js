@@ -1,7 +1,9 @@
 window.addEventListener('load', function() {
   // store tabs variable
-  const myTabs = document.getElementsByClassName('.stableunit__slider-button');
+  const myTabs = document.getElementsByClassName('stableunit__slider-button');
   const headerLinks = document.getElementsByClassName('header__nav-item');
+  const navMenuElem = document.querySelector('.header__nav-absolute');
+  const navMenuButtons = document.getElementsByClassName('header__nav-mobile-button');
   const sections = [];
   const offset = 76;
   let selectedIndex = -1;
@@ -12,6 +14,11 @@ window.addEventListener('load', function() {
     if (section[0] === '#') {
       sections.push(section);
     }
+  }
+
+  function toggleMenu(e) {
+    navMenuElem.classList.toggle('header__nav-absolute_opened');
+    e.stopPropagation();
   }
 
   function myTabClicks(tabClickEvent) {
@@ -41,6 +48,13 @@ window.addEventListener('load', function() {
   for (let i = 0; i < myTabs.length; i++) {
     myTabs[i].addEventListener('click', myTabClicks);
   }
+
+
+  for (let i = 0; i < navMenuButtons.length; i++) {
+    navMenuButtons[i].addEventListener('click', toggleMenu);
+  }
+
+  document.querySelector('.header__nav-absolute').addEventListener('click', toggleMenu, true);
 
   window.addEventListener('scroll', function() {
     for (let k = 0; k < sections.length; k++) {

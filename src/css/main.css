@@ -154,12 +154,25 @@ header .logo img {
   transform: scaleX(1);
 }
 
-.header__nav-item_active.underlined:after {
+.header__nav-item.underlined:after {
   transition: transform 0.25s, background-color 0.25s;
+  transform-origin: right top;
+}
+
+.header__nav-item_active.underlined:after {
+  transform-origin: left top;
 }
 
 .header__nav-item_active.underlined:hover:after {
   background-color: white;
+}
+
+.header__nav-wrapper {
+  position: relative;
+}
+
+.header__nav-mobile-button {
+  color: white;
 }
 
 section.content {
@@ -755,6 +768,54 @@ footer p {
 @media (max-width: 767px) {
   html {
     font-size: 14px;
+  }
+
+  div.wrap {
+    margin: 76px 5px 5px;
+  }
+
+  header {
+    border-width: 5px;
+  }
+
+  .header__nav-mobile-button {
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+  }
+
+  .header__nav-absolute {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.25s, opacity 0.25s;
+    transform-origin: right center;
+    border: 5px solid rgba(255, 255, 255, 0);
+    border-top-width: 0;
+  }
+
+  .header__nav-absolute_opened {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .header__nav {
+    height: auto;
+    line-height: 1.3em;
+    display: block;
+    width: 50%;
+  }
+
+  .header__nav-item {
+    display: block;
+    margin: 0;
   }
 
   .heading {

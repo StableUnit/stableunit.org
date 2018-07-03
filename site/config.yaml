@@ -17,7 +17,6 @@ languages:
     menu:
       main:
         - url: "#mission"
-          pre: mission
           name: Mission
           weight: 1
         - url: "#stableunit"

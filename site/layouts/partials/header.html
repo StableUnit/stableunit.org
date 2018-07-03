@@ -1,16 +1,30 @@
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 wrapper">
-                <a href="/" class="logo">
-                    <img src="/img/stableunit-logo-horizontal.svg" alt="Stable Unit"/>
-                </a>
-                <nav class="header__nav hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 wrapper">
+        <a href="/" class="logo">
+          <img src="/img/stableunit-logo-horizontal.svg" alt="Stable Unit"/>
+        </a>
+        <div class="header__nav-wrapper">
+          <div class="header__nav-mobile-button visible-xs">menu</div>
+          <div class="header__nav-absolute">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                  <nav class="header__nav">
                     {{ range .Site.Menus.main }}
-                    <a class="header__nav-item underlined" data-element="{{ .Pre }}" href="{{ .URL }}">{{ .Name }}</a>
+                    <a class="header__nav-item underlined" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
-                </nav>
+                  </nav>
+                </div>
+                <div class="col-xs-3 col-xs-push-3 visible-xs">
+                  <div class="header__nav-mobile-button">close</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </header>
