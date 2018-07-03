@@ -10,7 +10,7 @@
     "build-preview": "gulp build-preview",
     "start": "gulp server",
     "start-preview": "gulp server-preview",
-    "lint": "eslint src --fix"
+    "lint": "eslint src"
   },
   "author": "",
   "license": "MIT",

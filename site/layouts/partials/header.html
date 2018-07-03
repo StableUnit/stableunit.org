@@ -7,7 +7,7 @@
                 </a>
                 <nav class="header__nav hidden-xs">
                     {{ range .Site.Menus.main }}
-                    <a class="header__nav-item underlined bold" data-element="{{ .Pre }}" href="{{ .URL }}">{{ .Name }}</a>
+                    <a class="header__nav-item underlined" data-element="{{ .Pre }}" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
                 </nav>
             </div>

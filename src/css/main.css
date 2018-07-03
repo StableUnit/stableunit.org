@@ -608,6 +608,11 @@ a.stableunit__slider-button_active:after {
   cursor: pointer;
 }
 
+.underlined {
+  transition: color 0.25s;
+  font-weight: 500;
+}
+
 .link, .underlined {
   display: inline-block;
   line-height: 1.5em;
@@ -615,7 +620,7 @@ a.stableunit__slider-button_active:after {
 }
 
 .underlined:after {
-  background-color: inherit;
+  height: 2px;
 }
 
 .link:hover {
@@ -624,6 +629,7 @@ a.stableunit__slider-button_active:after {
 
 .link:after {
   background-color: #F96F21;
+  height: 1px;
 }
 
 .link:after, .underlined:after {
@@ -634,7 +640,6 @@ a.stableunit__slider-button_active:after {
   transform: scaleX(1);
   transform-origin: left center;
   width: 100%;
-  height: 1px;
   transition: transform 0.25s;
 }
 
