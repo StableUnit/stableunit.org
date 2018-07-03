@@ -101,7 +101,7 @@ header {
   border: 10px solid white;
   border-top: none;
   border-bottom: none;
-  padding: 18px;
+  padding: 18px 0;
   background-color: #151515;
 }
 
