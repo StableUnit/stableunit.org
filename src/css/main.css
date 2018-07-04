@@ -730,6 +730,7 @@ a.stableunit__slider-button_active:after {
 .social__list {
   list-style-type: none;
   margin: 24px 0 0;
+  font-weight: 400;
   padding: 0;
 }
 
