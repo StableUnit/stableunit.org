@@ -41,10 +41,6 @@
       "inProgress": true
     },
     {
-      "title": "Create Monte-Carlo and agent based simulation",
-      "width": 30
-    },
-    {
       "title": "Launch on a main net with limited circulation",
       "width": 30
     },
@@ -54,6 +50,10 @@
     },
     {
       "title": "Roll out SU protocol with limited supply",
+      "width": 40
+    },
+    {
+      "title": "Develop authorised transaction (possible via ring signatures, for private payments)",
       "width": 40,
       "reverse": true
     },

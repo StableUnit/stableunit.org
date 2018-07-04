@@ -1,12 +1,13 @@
 <section class="stableunit" id="stableunit">
   <div class="container">
+    <div class="separator dark hidden-xs"></div>
     <div class="row">
       <div class="col-xs-12">
         <h2>{{ i18n "stableunit" }}</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-3 col-sm-push-1">
+      <div class="col-xs-12 col-sm-2 col-sm-push-1">
         <ul class="stableunit__slider-buttons">
           {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
             <li class="stableunit__slider-li">
@@ -19,7 +20,7 @@
           {{ end }}
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-7 col-sm-push-1 stableunit__slider-slides">
+      <div class="col-xs-12 col-sm-8 col-sm-push-1 stableunit__slider-slides">
         {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
         <div class="stableunit__slider-item {{ if (eq $index 0) }}stableunit__slider-item_active{{ end }} content" id="{{ .Permalink }}">
           {{ .Content }}

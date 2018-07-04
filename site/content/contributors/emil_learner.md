@@ -1,6 +1,7 @@
 ---
 title: "Emil Learner"
 link: "https://github.com/neex"
+linkType: "github"
 weight: 2
 ---
 Security

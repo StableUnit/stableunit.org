@@ -8,16 +8,19 @@
     <div class="row">
       {{ range $index, $element := where .Data.Pages "Section" "contributors" }}
         <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
-          <div class="contributors__item-title">
-            <a class="link bold black" href="{{ .Params.link }}" target="_blank" rel="noreferrer">{{ .Title }}</a>
-          </div>
+          <h3 class="contributors__item-title">
+            <a href="{{ .Params.link }}" target="_blank" rel="noreferrer">
+              <span class="link bold black">{{ .Title }}</span>
+              <span class="social-link">{{ partial "social-link.html" .Params.linkType }}</span>
+            </a>
+          </h3>
           <div class="contributors__item-description">
             {{ .Content }}
           </div>
         </div>
       {{ end }}
       <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
-        <a href="/contributors/join">
+        <a href="https://github.com">
             <span class="button">
               <span class="link bold black">
                 {{ i18n "join" }} <span class="arrow">→</span>

@@ -2,9 +2,8 @@
 title: "Alex Lebed"
 role: "Founder and CEO"
 subtitle: "Founder of Malerex AI Widgets and 2 other businesses."
-social:
- - url: "https://linkedin.com"
-   title: "LinkedIn"
+link: "https://www.linkedin.com/"
+linkType: "linkedin"
 avatar: "/img/alexlebed.png"
 ---
 
