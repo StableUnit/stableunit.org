@@ -93,7 +93,6 @@ div.wrap {
 }
 
 header {
-  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   line-height: 21px;
   position: fixed;
@@ -128,6 +127,7 @@ header .logo img {
 }
 
 .header__nav-item {
+  font-family: 'IBM Plex Sans', sans-serif;
   color: rgba(255, 255, 255, 0.5);
   margin: 0 10px;
 }
@@ -841,6 +841,18 @@ footer p {
     display: none;
   }
 
+  .header__nav-absolute .whitepapers {
+    margin-top: 40px;
+  }
+
+  .header__nav-absolute .whitepapers__item_disabled {
+    display: none;
+  }
+
+  .header__nav-absolute .social {
+    margin-top: 30px;
+  }
+
   .heading {
     padding-top: 30px;
   }
@@ -852,6 +864,10 @@ footer p {
   .social__item {
     display: block;
     margin: 5px 0;
+  }
+
+  .header__nav-absolute .social__item {
+    display: inline-block;
   }
 
   .social__item:after {
