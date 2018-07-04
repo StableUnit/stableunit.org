@@ -17,7 +17,7 @@
   Or add your statements here:
  */
 html {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
   font-size: 18px;
   line-height: 1.3em;
   font-weight: 300;
@@ -56,7 +56,7 @@ a {
 }
 
 h1, h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   line-height: 1.3em;
 }
@@ -128,7 +128,7 @@ header .logo img {
 }
 
 .header__nav-item {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   color: rgba(255, 255, 255, 0.5);
   margin: 0 10px;
 }
@@ -752,7 +752,7 @@ a.stableunit__slider-button_active:after {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
 }
 
 .whitepapers__item {
