@@ -787,7 +787,6 @@ footer p {
 
   .header__nav-absolute {
     position: fixed;
-    background-color: black;
     width: 100vw;
     height: 100vh;
     display: block;
@@ -797,9 +796,21 @@ footer p {
     transform: translateX(100%);
     transition: transform 0.25s, opacity 0.25s;
     transform-origin: right center;
-    border: 5px solid white;
-    padding: 0 15px;
-    border-top-width: 0;
+    padding: 0 5px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+  }
+
+  .header__nav-absolute .header__nav-mobile-button {
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+  .header__nav-absolute-inner {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
   }
 
   .header__nav-absolute_opened {
@@ -811,12 +822,23 @@ footer p {
     height: auto;
     line-height: 1.3em;
     display: block;
-    width: 50%;
   }
 
   .header__nav-item {
     display: block;
     margin: 0;
+    font-size: 1.71em;
+    line-height: 2.21em;
+    font-weight: 600;
+    color: white;
+  }
+
+  .header__nav-item_active {
+    color: #F96F21;
+  }
+
+  .header__nav-item.underlined:after {
+    display: none;
   }
 
   .heading {

@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
   // store tabs variable
-  const myTabs = document.getElementsByClassName('stableunit__slider-button');
+  const myTabs = document.querySelectorAll('a.stableunit__slider-button');
   const headerLinks = document.getElementsByClassName('header__nav-item');
   const navMenuElem = document.querySelector('.header__nav-absolute');
   const navMenuButtons = document.getElementsByClassName('header__nav-mobile-button');
