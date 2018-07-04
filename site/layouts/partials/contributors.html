@@ -9,7 +9,7 @@
       {{ range $index, $element := where .Data.Pages "Section" "contributors" }}
         <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
           <h3 class="contributors__item-title">
-            <a href="{{ .Params.link }}" target="_blank" rel="noreferrer">
+            <a href="{{ .Params.link }}" target="_blank" rel="noopener">
               <span class="link bold black">{{ .Title }}</span>
               <span class="social-link">{{ partial "social-link.html" .Params.linkType }}</span>
             </a>

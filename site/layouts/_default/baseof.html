@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="StableUnit — Decentralized low-volatility cryptocurrency with multi-layer stabilization mechanism">
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
     <title>{{ $.Site.Title }}</title>
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/main.css"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,6 +33,5 @@
     </div>
 
     <script src="app.js"></script>
-
   </body>
 </html>
