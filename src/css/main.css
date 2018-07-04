@@ -504,6 +504,7 @@ a.stableunit__slider-button_active:after {
   color: white;
   background-color: rgba(21, 21, 21, 0.3);
   cursor: pointer;
+  transition: background-color 0.25s;
 }
 
 .team__more-arrow-image {
@@ -531,11 +532,19 @@ a.stableunit__slider-button_active:after {
   background-color: #151515;
 }
 
-.team__more-arrow:hover + .team__more-text {
+.team__more-arrow:hover {
+  background-color: #151515;
+}
+
+.team__more-arrow-checkbox {
+  display: none;
+}
+
+.team__more-arrow-checkbox:checked ~ .team__more-text {
   transform: translateX(0);
 }
 
-.team__more-arrow:hover .team__more-arrow-image {
+.team__more-arrow-checkbox:checked + .team__more-arrow .team__more-arrow-image {
   transform: rotate(180deg);
   opacity: 1;
 }

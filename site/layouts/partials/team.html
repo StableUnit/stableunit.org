@@ -25,9 +25,10 @@
                 <p class="team__item-subtitle">{{ .Params.subtitle }}</p>
               </div>
             </div>
-            <div class="team__more-arrow hidden-xs">
+            <input id="team__info-{{ $index }}" type="checkbox" class="team__more-arrow-checkbox">
+            <label for="team__info-{{ $index }}" class="team__more-arrow hidden-xs">
               <div class="team__more-arrow-image"><</div>
-            </div>
+            </label>
             <div class="team__more-text hidden-xs">
               {{ .Content }}
             </div>
