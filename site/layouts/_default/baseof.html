@@ -10,14 +10,7 @@
       {{ end }}
     {{ end }}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="StableUnit — Decentralized low-volatility cryptocurrency with multi-layer stabilization mechanism">
-    <meta name="theme-color" content="#151515">
-    <meta property="og:title" content="Stable Unit"/>
-    <meta property="og:description" content="StableUnit — Decentralized low-volatility cryptocurrency with multi-layer stabilization mechanism"/>
-    <meta property="og:image" content="{{ $baseUrl }}/android-chrome-512x512.png">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content= "{{ $baseUrl }}" />
+    {{ partial "meta.html" $baseUrl }}
     <base href="{{ $baseUrl }}">
     <title>{{ $.Site.Title }}</title>
     <link rel="manifest" href="/site.webmanifest">
