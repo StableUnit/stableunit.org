@@ -21,6 +21,8 @@
     <base href="{{ $baseUrl }}">
     <title>{{ $.Site.Title }}</title>
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css"/>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117343453-1"></script>
     <script>
@@ -30,10 +32,9 @@
 
       gtag('config', 'UA-117343453-1');
     </script>
-    <link rel="stylesheet" href="css/grid.css"/>
+
   </head>
   <body>
-    {{ partial "critical_styles.html" . }}
 
     <div class="wrap">
       {{ block "header" . }}{{ partial "header" . }}{{end}}
@@ -45,7 +46,6 @@
       {{ block "footer" . }}{{ partial "footer" . }}{{end}}
     </div>
 
-    <link rel="stylesheet" href="css/main.css"/>
     <script src="app.js"></script>
   </body>
 </html>
