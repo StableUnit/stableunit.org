@@ -1,14 +1,26 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   <head>
-    <meta charset="utf-8">
+    {{ $baseUrl := $.Site.BaseURL }}
+    {{ if getenv "CONTEXT" }}
+      {{ if eq "production" (getenv "CONTEXT") }}
+        {{ $baseUrl := getenv "URL" }}
+      {{ else }}
+        {{ $baseUrl := getenv "DEPLOY_PRIME_URL" }}
+      {{ end }}
+    {{ end }}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="StableUnit — Decentralized low-volatility cryptocurrency with multi-layer stabilization mechanism">
-    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    <meta name="theme-color" content="#151515">
+    <meta property="og:title" content="Stable Unit"/>
+    <meta property="og:description" content="StableUnit — Decentralized low-volatility cryptocurrency with multi-layer stabilization mechanism"/>
+    <meta property="og:image" content="{{ $baseUrl }}/android-chrome-512x512.png">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content= "{{ $baseUrl }}" />
+    <base href="{{ $baseUrl }}">
     <title>{{ $.Site.Title }}</title>
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/main.css"/>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117343453-1"></script>
     <script>
@@ -18,9 +30,10 @@
 
       gtag('config', 'UA-117343453-1');
     </script>
-
+    <link rel="stylesheet" href="css/grid.css"/>
   </head>
   <body>
+    {{ partial "critical_styles.html" . }}
 
     <div class="wrap">
       {{ block "header" . }}{{ partial "header" . }}{{end}}
@@ -32,6 +45,7 @@
       {{ block "footer" . }}{{ partial "footer" . }}{{end}}
     </div>
 
+    <link rel="stylesheet" href="css/main.css"/>
     <script src="app.js"></script>
   </body>
 </html>
