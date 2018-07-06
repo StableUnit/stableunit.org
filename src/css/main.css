@@ -851,6 +851,10 @@ footer p {
     margin-bottom: 70px;
   }
 
+  .heading__hero img {
+    width: 100%;
+  }
+
   .social__item {
     display: block;
     margin: 5px 0;
@@ -933,7 +937,6 @@ footer p {
   }
 
   .header__nav-absolute .header__nav-mobile-button {
-    margin-top: 4px;
     display: inline-block;
   }
 
@@ -943,6 +946,14 @@ footer p {
     height: 100%;
     background-color: #151515;
     overflow: auto;
+    position: relative;
+  }
+
+  .header__nav-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 0 0;
   }
 
   .header__nav-absolute_opened {
@@ -1186,8 +1197,39 @@ footer p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   html {
     font-size: 16px;
+  }
+
+  .header__nav-absolute {
+    border-width: 10px;
+    padding: 0 10px;
+  }
+
+  .header__nav-absolute-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header__nav-item {
+    font-size: 2.25em;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+  }
+
+  .header__copyright {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  .header__nav-absolute {
+    width: 50vw;
+    right: 0;
+    left: inherit;
+    border: none;
   }
 }
