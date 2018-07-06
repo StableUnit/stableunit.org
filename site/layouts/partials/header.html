@@ -6,32 +6,32 @@
           <img src="/img/stableunit-logo-horizontal.svg" alt="Stable Unit"/>
         </a>
         <div class="header__nav-wrapper">
-          <img class="header__nav-mobile-button visible-xs" alt="menu" src="/img/menu.svg">
+          <img class="header__nav-mobile-button visible-xs visible-sm" alt="menu" src="/img/menu.svg">
           <div class="header__nav-absolute">
             <div class="header__nav-absolute-inner">
               <div class="row">
-                <div class="col-xs-6 col-sm-12">
+                <div class="col-xs-6 col-xs-12 col-md-12">
                   <nav class="header__nav">
                     {{ range .Site.Menus.main }}
                     <a class="header__nav-item underlined" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
                   </nav>
                 </div>
-                <div class="col-xs-3 col-xs-push-3 visible-xs" style="text-align: right;">
-                  <img class="header__nav-mobile-button visible-xs" alt="close" src="/img/close.svg">
+                <div class="col-xs-3 col-xs-push-3 visible-xs visible-sm" style="text-align: right;">
+                  <img class="header__nav-mobile-button visible-xs visible-sm-inline-block" alt="close" src="/img/close.svg">
                 </div>
               </div>
-              <div class="row visible-xs">
+              <div class="row visible-xs visible-sm">
                 <div class="col-xs-12">
                   {{ partial "whitepapers" . }}
                 </div>
               </div>
-              <div class="row visible-xs">
+              <div class="row visible-xs visible-sm">
                 <div class="col-xs-12">
                   {{ partial "social" . }}
                 </div>
               </div>
-              <div class="row visible-xs">
+              <div class="row visible-xs visible-sm">
                 <div class="col-xs-12">
                   <p class="header__copyright">&copy; 2018 Stable Unit</p>
                 </div>

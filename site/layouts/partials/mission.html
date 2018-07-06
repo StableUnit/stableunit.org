@@ -2,10 +2,10 @@
   <div class="container wrapper">
     <div class="row">
       {{ with .Site.GetPage "page" "landing/_mission" }}
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-12 col-md-6">
           <h2>{{ .Title }}</h2>
         </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-12 col-md-6">
           {{ .Content }}
         </div>
       {{ end }}

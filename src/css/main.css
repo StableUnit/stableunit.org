@@ -524,6 +524,7 @@ a.stableunit__slider-button_active:after {
   height: 100%;
   transform: translateX(100%);
   transition: transform 0.2s;
+  overflow: auto;
 }
 
 .team__more-text, .team__more-mobile-text {
@@ -833,15 +834,77 @@ footer p {
     margin: 76px 5px 5px;
   }
 
-  header {
-    border-width: 5px;
-  }
-
   h3 {
     font-size: 1.285em;
     line-height: 1.3em;
   }
 
+  header {
+    border-width: 5px;
+  }
+
+  .heading {
+    padding-top: 30px;
+  }
+
+  .heading__title {
+    margin-bottom: 70px;
+  }
+
+  .social__item {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .social__item:after {
+    content: "";
+  }
+
+  .vision__musk {
+    background-color: #151515;
+    color: white;
+    padding: 60px 20px 60px 34px;
+  }
+
+  .vision__musk-container {
+    position: static;
+  }
+
+  .vision__musk-inner {
+    position: static;
+    left: 0;
+    bottom: 41px;
+  }
+
+  .stableunit__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+  }
+
+  .stableunit__slider-li {
+    margin: 14px 10px;
+    white-space: nowrap;
+  }
+
+  .stableunit__slider-li:first-child {
+    margin-left: 0;
+  }
+
+  .stableunit__slider-li:last-child {
+    margin-right: 0;
+  }
+
+  .team__more-mobile-text p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
   .header__nav-mobile-button {
     height: 40px;
     display: inline-block;
@@ -865,6 +928,10 @@ footer p {
     border-bottom: 5px solid white;
   }
 
+  .header__nav-absolute .social__item {
+    display: inline-block;
+  }
+
   .header__nav-absolute .header__nav-mobile-button {
     margin-top: 4px;
     display: inline-block;
@@ -875,6 +942,7 @@ footer p {
     width: 100%;
     height: 100%;
     background-color: #151515;
+    overflow: auto;
   }
 
   .header__nav-absolute_opened {
@@ -934,27 +1002,6 @@ footer p {
     margin-top: 28px;
   }
 
-  .heading {
-    padding-top: 30px;
-  }
-
-  .heading__title {
-    margin-bottom: 70px;
-  }
-
-  .social__item {
-    display: block;
-    margin: 5px 0;
-  }
-
-  .header__nav-absolute .social__item {
-    display: inline-block;
-  }
-
-  .social__item:after {
-    content: "";
-  }
-
   .mission {
     padding: 40px 0 50px;
   }
@@ -963,47 +1010,8 @@ footer p {
     margin-bottom: 50px;
   }
 
-  .vision__musk {
-    background-color: #151515;
-    color: white;
-    padding: 60px 20px 60px 34px;
-  }
-
-  .vision__musk-container {
-    position: static;
-  }
-
-  .vision__musk-inner {
-    position: static;
-    left: 0;
-    bottom: 41px;
-  }
-
   .stableunit {
     padding-top: 60px;
-  }
-
-  .stableunit__slider-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    margin: 0;
-  }
-
-  .stableunit__slider-li {
-    margin: 14px 10px;
-    white-space: nowrap;
-  }
-
-  .stableunit__slider-li:first-child {
-    margin-left: 0;
-  }
-
-  .stableunit__slider-li:last-child {
-    margin-right: 0;
   }
 
   .roadmap {
@@ -1139,10 +1147,6 @@ footer p {
     padding: 30px;
   }
 
-  .team__more-mobile-text p {
-    margin: 0;
-  }
-
   .contributors {
     padding-bottom: 50px;
   }
@@ -1182,3 +1186,8 @@ footer p {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+}
