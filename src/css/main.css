@@ -950,10 +950,10 @@ footer p {
   }
 
   .header__nav-close {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    padding: 15px 0 0;
+    padding: 15px 10px 0 0;
   }
 
   .header__nav-absolute_opened {
