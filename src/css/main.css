@@ -200,6 +200,10 @@ section h1 {
   margin-bottom: 50px;
 }
 
+.heading__hero img {
+  width: 100%;
+}
+
 .mission {
   color: white;
   background-color: #151515;
@@ -849,10 +853,6 @@ footer p {
 
   .heading__title {
     margin-bottom: 70px;
-  }
-
-  .heading__hero img {
-    width: 100%;
   }
 
   .social__item {
