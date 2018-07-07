@@ -400,6 +400,23 @@ a.stableunit__slider-button_active:after {
   width: 1em;
 }
 
+.roadmap__date {
+  position: absolute;
+  top: -35px;
+  left: 1em;
+  white-space: nowrap;
+}
+
+.roadmap__date-text {
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.roadmap__list-item_reverse .roadmap__date {
+  right: 1em;
+  left: initial;
+}
+
 .roadmap__description {
   font-size: 1em;
   position: absolute;
@@ -531,8 +548,12 @@ a.stableunit__slider-button_active:after {
   overflow: auto;
 }
 
+.team__more-text p {
+  margin: 0;
+}
+
 .team__more-text, .team__more-mobile-text {
-  padding: 24px 40px 24px 24px;
+  padding: 24px;
   color: white;
   background-color: #151515;
 }
@@ -1068,6 +1089,12 @@ footer p {
     width: 3px;
     left: 20px;
     top: 0;
+  }
+
+  .roadmap__date, .roadmap__list-item_reverse .roadmap__date {
+    top: initial;
+    right: initial;
+    left: 80px;
   }
 
   .roadmap__description, .roadmap__list-item_reverse .roadmap__description {

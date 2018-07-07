@@ -32,33 +32,40 @@
   "roadmap": [
     {
       "title": "Create Monte-Carlo and agent based simulation",
+      "date": "Q2 2018",
       "width": 20,
       "complete": true
     },
     {
       "title": "Implement ERC20 token on a test net",
-      "width": 50,
+      "date": "Q3 2018",
+      "width": 20,
       "inProgress": true
     },
     {
       "title": "Launch on a main net with limited circulation",
-      "width": 30
+      "date": "Q1 2019",
+      "width": 50
     },
     {
       "title": "Develop a stand-alone protocol based on Ethereum using reserves on a testnet and a smart-bridge mechanism",
-      "width": 60
+      "date": "Q3 2019",
+      "width": 30
     },
     {
       "title": "Roll out SU protocol with limited supply",
-      "width": 40
+      "date": "Q4 2019",
+      "width": 20
     },
     {
       "title": "Develop authorised transaction (possible via ring signatures, for private payments)",
-      "width": 40,
+      "date": "2020",
+      "width": 50,
       "reverse": true
     },
     {
       "title": "Test on a full scale network",
+      "date": "2021",
       "width": 20,
       "reverse": true
     }
