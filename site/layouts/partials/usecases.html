@@ -1,0 +1,47 @@
+<section class="usecases" id="usecases">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.GetPage "page" "landing/_usecases" }}
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <h2 class="usecases__title">{{ .Title }}</h2>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 usecases__heading">
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      {{ range $index, $element := where .Data.Pages "Section" "usecases" }}
+      <div class="col-xs-12 col-sm-12 col-md-9 col-md-push-3">
+        <div class="usecases__tab">
+          <div class="usecases__inner">
+            <input id="usecases-tab-{{ $index }}" type="checkbox" name="tabs">
+            <label for="usecases-tab-{{ $index }}">{{ .Title }}</label>
+            <div class="usecases__tab-content">
+              <div class="usecases__tab-content-inner">
+                {{ .Content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      {{ with .Site.GetPage "page" "landing/_usecases2" }}
+        <div class="col-xs-12 col-sm-12 col-md-9 col-md-push-3">
+          {{ .Content }}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-md-push-3">
+          <a href="{{ .Params.link }}">
+            <span class="button">
+              <span class="link bold black">
+                {{ .Title }} <span class="arrow">→</span>
+              </span>
+            </span>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

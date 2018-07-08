@@ -1,0 +1,13 @@
+<ul class="whitepapers">
+  {{ range .Site.Data.meta.whitepapers }}
+    {{ if .disabled }}
+      <li class="whitepapers__item whitepapers__item_disabled">
+        <span>{{ .title }}</span>
+      </li>
+    {{ else }}
+      <li class="whitepapers__item">
+        <a class="link bold" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }} →</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>

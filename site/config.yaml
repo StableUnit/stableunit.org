@@ -2,6 +2,7 @@ baseurl: /
 languageCode: en-us
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
+googleAnalytics: UA-117343453-1
 title: Stable Unit
 disableKinds:
   - RSS
@@ -14,6 +15,29 @@ languages:
       Stable Unit: Decentralized low-volatility cryptocurrency with multi-layer
       stabilization
     weight: 1
+    menu:
+      main:
+        - url: "#mission"
+          name: Mission
+          weight: 1
+        - url: "#stableunit"
+          name: What is
+          weight: 2
+        - url: "#roadmap"
+          name: Roadmap
+          weight: 3
+        - url: "#team"
+          name: Team
+          weight: 4
+        - url: "#contributors"
+          name: Contributors
+          weight: 5
+        - url: "#usecases"
+          name: Use cases
+          weight: 6
+        - url: "#daico"
+          name: DAICO
+          weight: 7
 
   ru:
     LanguageName: Русский
@@ -23,7 +47,7 @@ languages:
     weight: 2
     menu:
       main:
-        - url: #explanation
+        - url: "#explanation"
           name: Как это работает
           weight: 1
         - url: /team

@@ -1,0 +1,16 @@
+<section class="daico" id="daico">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.GetPage "page" "landing/_daico" }}
+        <div class="col-xs-12 col-sm-12 col-md-3">
+          <h2 class="daico__header">
+            <span class="daico__header-wrapper">{{ .Title }}</span>
+          </h2>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 content">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

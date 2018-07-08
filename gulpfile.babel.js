@@ -52,7 +52,7 @@ gulp.task("js", (cb) => {
 });
 
 // Move all fonts in a flattened directory
-gulp.task('fonts', () => (
+gulp.task("fonts", () => (
   gulp.src("./src/fonts/**/*")
     .pipe(flatten())
     .pipe(gulp.dest("./dist/fonts"))
@@ -70,7 +70,7 @@ function runServer() {
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
-};
+}
 
 /**
  * Run hugo and build the site

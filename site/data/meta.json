@@ -1,0 +1,73 @@
+{
+  "whitepapers": [
+    {
+      "title": "Read out White Paper",
+      "url": "/StableUnit-whitepaper.pdf"
+    },
+    {
+      "title": "Techy Whitepaper (in progress)",
+      "url": "/whitepaper.pdf",
+      "disabled": true
+    },
+    {
+      "title": "Simulation (in progress)",
+      "url": "/whitepaper.pdf",
+      "disabled": true
+    }
+  ],
+  "social": [
+    {
+      "title": "twitter",
+      "url": "https://twitter.com"
+    },
+    {
+      "title": "telegram",
+      "url": "https://telegram.org"
+    },
+    {
+      "title": "medium",
+      "url": "https://medium.com"
+    }
+  ],
+  "roadmap": [
+    {
+      "title": "Create Monte-Carlo and agent based simulation",
+      "date": "Q2 2018",
+      "width": 20,
+      "complete": true
+    },
+    {
+      "title": "Implement ERC20 token on a test net",
+      "date": "Q3 2018",
+      "width": 20,
+      "inProgress": true
+    },
+    {
+      "title": "Launch on a main net with limited circulation",
+      "date": "Q1 2019",
+      "width": 50
+    },
+    {
+      "title": "Develop a stand-alone protocol based on Ethereum using reserves on a testnet and a smart-bridge mechanism",
+      "date": "Q3 2019",
+      "width": 30
+    },
+    {
+      "title": "Roll out SU protocol with limited supply",
+      "date": "Q4 2019",
+      "width": 20
+    },
+    {
+      "title": "Develop authorised transaction (possible via ring signatures, for private payments)",
+      "date": "2020",
+      "width": 50,
+      "reverse": true
+    },
+    {
+      "title": "Test on a full scale network",
+      "date": "2021",
+      "width": 20,
+      "reverse": true
+    }
+  ]
+}

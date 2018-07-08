@@ -1,34 +1,11 @@
 {{ define "main" }}
-<section class="content">
-  <section class="hero">
-    {{ .Content }}
-
-    {{ partial "subscribe_form" . }}
-
-    {{ partial "social_buttons" . }}
-  </section>
-
-  <aside>
-    <img src="/img/hero1.png" srcset="/img/hero1_2x.png 2x" alt="Stable Unit and Volatility Penguins" />
-  </aside>
-
-</section>
-
-<section class="block" id="explanations">
-  <h1>
-    {{ range $index, $element := where .Data.Pages "Section" "explanations" }}
-
-      <a href="{{ .Permalink }}" class="tab {{ if (eq $index 0) }}active{{ end }}">{{ .Title }}</a>
-    {{ end }}
-  </h1>
-  <div class="explanations">
-    {{ range $index, $element := where .Data.Pages "Section" "explanations" }}
-      <div class="explanation {{ if (eq $index 0) }}active{{ end }}" id="{{ .Permalink }}">
-        {{ .Content }}
-      </div>
-    {{ end }}
-  </div>
-</section>
-
-
+{{ partial "heading" . }}
+{{ partial "mission" . }}
+{{ partial "vision" . }}
+{{ partial "stableunit" . }}
+{{ partial "roadmap" . }}
+{{ partial "team" . }}
+{{ partial "contributors" . }}
+{{ partial "usecases" . }}
+{{ partial "daico" . }}
 {{end}}

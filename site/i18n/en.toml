@@ -3,3 +3,21 @@ other = "Subscribe"
 
 [your_email]
 other = "Your e-mail"
+
+[stableunit]
+other = "What is StableUnit"
+
+[team]
+other = "Our team"
+
+[roadmap]
+other = "Roadmap"
+
+[contributors]
+other = "Our contributors"
+
+[join]
+other = "Join as a contributor"
+
+[usecases]
+other = "Use cases"

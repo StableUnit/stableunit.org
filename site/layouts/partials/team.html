@@ -1,0 +1,44 @@
+<section class="team" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="team__title">{{ i18n "team" }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ range $index, $element := where .Data.Pages "Section" "team" }}
+      <div class="coll-xs-12 col-sm-12 col-md-4 team__col">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-9 team__item">
+            <div class="team__item-inner">
+              <img class="team__item-image" src="{{ .Params.avatar }}" alt="{{ .Title }}">
+              <div class="team__inner-info">
+                <h3 class="team__item-title">
+                  <a href="{{ .Params.link }}" target="_blank" rel="noopener">
+                    <span class="link bold black">{{ .Title | safeHTML }}</span>
+                    <span class="social-link">
+                      {{ partial "social-link.html" .Params.linkType }}
+                    </span>
+                  </a>
+                </h3>
+                <p class="team__item-role">{{ .Params.role }}</p>
+                <p class="team__item-subtitle">{{ .Params.subtitle }}</p>
+              </div>
+            </div>
+            <input id="team__info-{{ $index }}" type="checkbox" class="team__more-arrow-checkbox">
+            <label for="team__info-{{ $index }}" class="team__more-arrow hidden-xs hidden-sm">
+              <div class="team__more-arrow-image"><</div>
+            </label>
+            <div class="team__more-text hidden-xs hidden-sm">
+              {{ .Content }}
+            </div>
+            <div class="team__more-mobile-text visible-xs visible-sm">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
