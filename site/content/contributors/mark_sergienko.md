@@ -2,9 +2,9 @@
 title: "Mark Sergienko"
 link: "https://www.linkedin.com/in/mark-sergienko/"
 linkType: "linkedin"
-weight: 5
+weight: 6
 ---
-CTO
+*FullStack*
 
 18 years dev experience
 
