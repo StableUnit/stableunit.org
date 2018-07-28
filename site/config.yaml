@@ -2,7 +2,7 @@ baseurl: /
 languageCode: en-us
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-googleAnalytics: UA-117343453-1
+googleAnalytics: UA-122953166-1
 title: Stable Unit
 disableKinds:
   - RSS
