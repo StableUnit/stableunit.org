@@ -2,4 +2,5 @@
 title: "Add example"
 link: "https://github.com/StableUnit/stableunit.org/tree/master/site/content/usecases"
 ---
-Since this fusion of fiat money and cryptocurrency has a unique set properties that never existed before, there might be some usage which we cannot foresee.
+StableUnits are a fusion of fiat money and cryptocurrency with a unique set of properties. For this reason, we cannot foresee all the potential use-cases.
+
