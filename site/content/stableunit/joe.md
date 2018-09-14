@@ -2,9 +2,10 @@
 title: "Average Joe"
 weight: 1
 ---
-Bitcoin is an amazing new form of money that has defied the odds to gain increasing importance as money in the world today. Despite its great features that help make Bitcoin an unstoppable investment it has a problem; the price swings prevent Bitcoin from gaining even more important as money. 
+Bitcoin, despite all of its advantages, is an inconvenient form of money because of its volatility. **StableUnit** is a **decentralized** cryptocurrency that is **stable**. 1SU=1USD. Always. How? StableUnit has automatic mechanisms that stabilize the price no matter what is happening in the markets. Like an **open-source bank** controlled by every user via voting and with no central authority.
 
-Stable coins are a new type of cryptocurrency that is entirely digital but whose price is always $1 US. 
+Compared to projects like Tether, our system is fully decentralized which guarantees that no-one can freeze your account or block a transaction. Ever. 
 
-Our stable coin, called StableUnit, is a new advanced type of stablecoin that will have features that also make it unstoppable and uncensorable. 
-These features include a multi-layer stability mechanism which helps ensure that the price of the stablecoin is always the same as holding an equivalent amount of U.S. dollars.
+Unlike overcollateralized systems like Makerdao’s DAI, StableUnit offers unlimited scalability, which is essential for mass adoption on an international scale.
+
+Multi-layer stabilization mechanism provides better protection in events of market instability compared to “Seigniorage share” stablecoins, like Basis and others.

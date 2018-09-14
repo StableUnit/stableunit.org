@@ -207,7 +207,7 @@ section h1 {
 .mission {
   color: white;
   background-color: #151515;
-  padding: 100px 0 80px;
+  padding: 80px 0 80px;
 }
 
 .scheme {
@@ -297,7 +297,8 @@ section.mission strong {
 }
 
 .stableunit {
-  padding-top: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .stableunit .separator {

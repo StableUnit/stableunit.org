@@ -48,26 +48,14 @@
       "width": 50
     },
     {
-      "title": "Develop a stand-alone protocol based on Ethereum using reserves on a testnet and a smart-bridge mechanism",
+      "title": "Develop a stand-alone protocol with bridge mechanism for existing blockchains",
       "date": "Q3 2019",
       "width": 30
     },
     {
-      "title": "Roll out SU protocol with limited supply",
+      "title": "Add private transactions functionality (via ring signatures or better alternatives)",
       "date": "Q4 2019",
       "width": 20
-    },
-    {
-      "title": "Develop authorised transaction (possible via ring signatures, for private payments)",
-      "date": "2020",
-      "width": 50,
-      "reverse": true
-    },
-    {
-      "title": "Test on a full scale network",
-      "date": "2021",
-      "width": 20,
-      "reverse": true
     }
   ]
 }

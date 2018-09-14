@@ -1,1 +1,4 @@
-# StableUnit — Decentralized low-volatility crypto&shy;currency with multi-layer stabilization mechanism
+# StableUnit — stable currency 
+<div>
+<h2>Decentralized low-volatility cryptocurrency</h2>
+</div>
