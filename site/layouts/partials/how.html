@@ -3,13 +3,13 @@
     
     <div class="row">
       <div class="col-xs-12">
-        <h2>{{ i18n "stableunit" }}</h2>
+        <h2>{{ i18n "how" }}</h2>
       </div>
     </div>
     <div class="row slider">
       <div class="col-xs-12 col-sm-2 col-md-push-1">
         <ul class="slider__buttons">
-          {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
+          {{ range $index, $element := where .Data.Pages "Section" "how" }}
             <li>
               {{ if .Params.disabled }}
                 <span class="slider__button link disabled bold">{{ .Title }}</span>
@@ -21,7 +21,7 @@
         </ul>
       </div>
       <div class="col-xs-12 col-sm-10 col-md-8 col-md-push-1 slider__content">
-        {{ range $index, $element := where .Data.Pages "Section" "stableunit" }}
+        {{ range $index, $element := where .Data.Pages "Section" "how" }}
         <div class="slider__item {{ if (eq $index 0) }}slider__item_active{{ end }} content" data-id="{{ .Permalink }}">
           {{ .Content }}
         </div>

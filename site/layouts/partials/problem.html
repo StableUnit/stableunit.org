@@ -1,0 +1,16 @@
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.GetPage "page" "landing/_problem" }}
+        <div class="col-xs-12">
+          <h2 class="problem__header">
+            <span class="problem__header-wrapper">{{ .Title }}</span>
+          </h2>
+        </div>
+        <div class="col-xs-12 content">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

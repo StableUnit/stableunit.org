@@ -271,7 +271,7 @@ section.mission strong {
 
 .vision {
   color: #151515;
-  padding-top: 40px;
+  padding-top: 120px;
 }
 
 .vision__musk {
@@ -296,48 +296,16 @@ section.mission strong {
   text-align: right;
 }
 
+.problem {
+  padding-top: 80px;
+}
+
 .stableunit {
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .stableunit .separator {
   margin-bottom: 70px;
-}
-
-.stableunit__slider-buttons {
-  list-style-type: none;
-  padding: 0;
-}
-
-.stableunit__slider-li {
-  margin-bottom: 30px;
-}
-
-.stableunit__slider-button {
-  line-height: 2em;
-}
-
-.stableunit__slider-item {
-  display: none;
-}
-
-.stableunit__slider-item_active {
-  display: block;
-}
-
-a.stableunit__slider-button:after {
-  transform: scaleX(0);
-  transform-origin: left center;
-}
-
-a.stableunit__slider-button_active:hover:after {
-  transform: none;
-}
-
-a.stableunit__slider-button_active:after {
-  transform: scaleX(1);
-  transform-origin: right center;
 }
 
 .roadmap {
@@ -851,6 +819,41 @@ footer p {
   margin: 0 0 20px;
 }
 
+.slider__buttons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slider li {
+  margin-bottom: 30px;
+}
+
+.slider__button {
+  line-height: 2em;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item_active {
+  display: block;
+}
+
+a.slider__button:after {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+a.slider__button_active:hover:after {
+  transform: none;
+}
+
+a.slider__button_active:after {
+  transform: scaleX(1);
+  transform-origin: right center;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 14px;
@@ -902,7 +905,7 @@ footer p {
     bottom: 41px;
   }
 
-  .stableunit__slider-buttons {
+  .slider__buttons {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -912,16 +915,16 @@ footer p {
     margin: 0;
   }
 
-  .stableunit__slider-li {
+  .slider li {
     margin: 14px 10px;
     white-space: nowrap;
   }
 
-  .stableunit__slider-li:first-child {
+  .slider li:first-child {
     margin-left: 0;
   }
 
-  .stableunit__slider-li:last-child {
+  .slider li:last-child {
     margin-right: 0;
   }
 

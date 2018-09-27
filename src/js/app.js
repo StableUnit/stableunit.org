@@ -1,11 +1,52 @@
+function createSlider(slider) {
+  if (!slider) {
+    return;
+  }
+
+  const tabs = slider.querySelectorAll('a.slider__button');
+  const panes = slider.querySelectorAll('.slider__item');
+  const myTabClicks = (tabClickEvent) => {
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove('slider__button_active');
+    }
+
+    const clickedTab = tabClickEvent.currentTarget;
+
+    clickedTab.classList.add('slider__button_active');
+
+    tabClickEvent.preventDefault();
+
+    for (let i = 0; i < panes.length; i++) {
+      panes[i].classList.remove('slider__item_active');
+    }
+
+    const anchorReference = tabClickEvent.target;
+    const activePaneId = anchorReference.getAttribute('href');
+    const activePane = Array.prototype.find.call(panes, (pane) => pane.dataset.id === activePaneId);
+
+    if (activePane) {
+      activePane.classList.add('slider__item_active');
+    }
+  };
+
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener('click', myTabClicks);
+  }
+}
+
 window.addEventListener('load', function() {
   // store tabs variable
-  const myTabs = document.querySelectorAll('a.stableunit__slider-button');
+  const sliders = document.querySelectorAll('.slider');
   const headerLinks = document.getElementsByClassName('header__nav-item');
   const navMenuElem = document.querySelector('.header__nav-absolute');
   const navMenuButtons = document.getElementsByClassName('header__nav-mobile-button');
   const sections = [];
   const offset = 76;
+
+  if (sliders.length) {
+    sliders.forEach(createSlider);
+  }
+
   let selectedIndex = -1;
 
   for (let j = 0; j < headerLinks.length; j++) {
@@ -20,35 +61,6 @@ window.addEventListener('load', function() {
     navMenuElem.classList.toggle('header__nav-absolute_opened');
     e.stopPropagation();
   }
-
-  function myTabClicks(tabClickEvent) {
-    for (let i = 0; i < myTabs.length; i++) {
-      myTabs[i].classList.remove('stableunit__slider-button_active');
-    }
-
-    const clickedTab = tabClickEvent.currentTarget;
-
-    clickedTab.classList.add('stableunit__slider-button_active');
-
-    tabClickEvent.preventDefault();
-
-    const myContentPanes = document.getElementsByClassName('stableunit__slider-item');
-
-    for (let i = 0; i < myContentPanes.length; i++) {
-      myContentPanes[i].classList.remove('stableunit__slider-item_active');
-    }
-
-    const anchorReference = tabClickEvent.target;
-    const activePaneId = anchorReference.getAttribute('href');
-    const activePane = document.getElementById(activePaneId);
-
-    activePane.classList.add('stableunit__slider-item_active');
-  }
-
-  for (let i = 0; i < myTabs.length; i++) {
-    myTabs[i].addEventListener('click', myTabClicks);
-  }
-
 
   for (let i = 0; i < navMenuButtons.length; i++) {
     navMenuButtons[i].addEventListener('click', toggleMenu);

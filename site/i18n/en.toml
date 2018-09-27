@@ -7,6 +7,9 @@ other = "Your e-mail"
 [stableunit]
 other = "What is StableUnit"
 
+[how]
+other = "How does it work"
+
 [team]
 other = "Our team"
 
