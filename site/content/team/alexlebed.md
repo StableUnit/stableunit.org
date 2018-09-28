@@ -4,7 +4,7 @@ role: "Founder and CEO"
 subtitle: "Founder of Malerex AI Widgets and 2 other businesses."
 link: "https://www.linkedin.com/in/alexlebed/"
 linkType: "linkedin"
-avatar: "/img/alexlebed.png"
+avatar: "/img/alexlebed.jpg"
 weight: 1
 ---
 

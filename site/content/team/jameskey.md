@@ -1,10 +1,10 @@
 ---
-title: "Alexandrovich"
+title: "James Key"
 role: "Lead researcher"
 subtitle: "Math degree. Winner of numerous CS/AI competitions"
 link: "/StableUnit-whitepaper.pdf"
 linkType: "linkedin"
-avatar: "/img/alexlebed3.png"
+avatar: "/img/jameskey.jpg"
 weight: 3
 ---
 

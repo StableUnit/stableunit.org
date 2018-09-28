@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-9 team__item">
             <div class="team__item-inner">
-              <img class="team__item-image" src="{{ .Params.avatar }}" alt="{{ .Title }}">
+              <div class="team__item-image" style="background-image: url('{{ .Params.avatar }}');" title="{{ .Title }}"></div>
               <div class="team__inner-info">
                 <h3 class="team__item-title">
                   <a href="{{ .Params.link }}" target="_blank" rel="noopener">

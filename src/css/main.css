@@ -460,6 +460,10 @@ section.mission strong {
 .team__item-image {
   display: block;
   margin: 17px 0;
+  width: 136px;
+  height: 136px;
+  border-radius: 68px;
+  background-size: cover;
 }
 
 .team__item-role, .team__item-subtitle {

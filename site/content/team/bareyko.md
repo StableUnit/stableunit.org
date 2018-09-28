@@ -1,10 +1,10 @@
 ---
-title: "Lebed2045"
+title: "Alexander Bareyko"
 role: "Developer"
 subtitle: "ex-software engineer at Amazon, Facebook, Genotek."
 link: "https://github.com/lebed2045"
 linkType: "github"
-avatar: "/img/alexlebed2.png"
+avatar: "/img/bareyko.jpg"
 weight: 2
 ---
 
