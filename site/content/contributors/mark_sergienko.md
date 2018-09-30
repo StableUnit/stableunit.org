@@ -2,7 +2,7 @@
 title: "Mark Sergienko"
 link: "https://www.linkedin.com/in/mark-sergienko/"
 linkType: "linkedin"
-weight: 6
+weight: 5
 ---
 *FullStack*
 

@@ -552,8 +552,11 @@ section.mission strong {
   margin-top: 40px;
 }
 
-.contributors {
+.advisors {
   padding-top: 90px;
+}
+
+.contributors {
   background-color: rgba(21, 21, 21, 0.04);
 }
 
