@@ -861,6 +861,14 @@ a.slider__button_active:after {
   transform-origin: right center;
 }
 
+.ya-share2.stableshare .ya-share2__badge {
+  background-color: #F96F21;
+}
+
+.ya-share2.stableshare .ya-share2__icon {
+  filter: invert(1);
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 14px;
