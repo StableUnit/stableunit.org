@@ -31,29 +31,29 @@
   ],
   "roadmap": [
     {
-      "title": "Create Monte-Carlo and agent based simulation",
+      "title": "Statistically verify the model via Monte-Carlo and Agent-based simulations",
       "date": "Q2 2018",
       "width": 20,
       "complete": true
     },
     {
-      "title": "Implement ERC20 token on a test net",
+      "title": "Proof of concept smartcontact implementation on existhing blokchain",
       "date": "Q3 2018",
       "width": 20,
       "inProgress": true
     },
     {
-      "title": "Launch on a main net with limited circulation",
+      "title": "Launch the public system with limited circulation",
       "date": "Q1 2019",
       "width": 50
     },
     {
-      "title": "Develop a stand-alone protocol with bridge mechanism for existing blockchains",
+      "title": "Standalone blockchain where SU is the core token",
       "date": "Q3 2019",
       "width": 30
     },
     {
-      "title": "Add private transactions functionality (via ring signatures or better alternatives)",
+      "title": "Additional functionality for privacy transactions",
       "date": "Q4 2019",
       "width": 20
     }

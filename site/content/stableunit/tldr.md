@@ -7,4 +7,4 @@ Stablecoin.
 
 Decentralized dollar.
 
-Stable-priced bitcoin.
+Stable-price bitcoin.
