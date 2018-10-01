@@ -831,7 +831,7 @@ footer p {
   padding: 0;
 }
 
-.slider li {
+.slider__buttons li {
   margin-bottom: 30px;
 }
 
@@ -930,16 +930,16 @@ a.slider__button_active:after {
     margin: 0;
   }
 
-  .slider li {
+  .slider__buttons li {
     margin: 14px 10px;
     white-space: nowrap;
   }
 
-  .slider li:first-child {
+  .slider__buttons li:first-child {
     margin-left: 0;
   }
 
-  .slider li:last-child {
+  .slider__buttons li:last-child {
     margin-right: 0;
   }
 
