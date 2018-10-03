@@ -1,12 +1,12 @@
-<section class="contributors" id="contributors">
+<section class="contributors advisors" id="advisors">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="contributors__title">{{ i18n "contributors" }}</h2>
+        <h2 class="contributors__title">{{ i18n "advisors" }}</h2>
       </div>
     </div>
     <div class="row">
-      {{ range $index, $element := where .Data.Pages "Section" "contributors" }}
+      {{ range $index, $element := where .Data.Pages "Section" "advisors" }}
         <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
           <h3 class="contributors__item-title">
             <a href="{{ .Params.link }}" target="_blank" rel="noopener">
@@ -19,15 +19,6 @@
           </div>
         </div>
       {{ end }}
-      <div class="col-xs-12 col-sm-12 col-md-4 contributors__item">
-        <a href="https://t.me/stableunit">
-            <span class="button">
-              <span class="link bold black">
-                {{ i18n "join" }} <span class="arrow">→</span>
-              </span>
-            </span>
-        </a>
-      </div>
     </div>
   </div>
 </section>

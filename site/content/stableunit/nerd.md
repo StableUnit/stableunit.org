@@ -1,6 +1,6 @@
 ---
 title: "Nerds"
-weight: 3
+weight: 4
 ---
 Bitcoin introduced a purely peer-to-peer version of electronic cash which allows online payments to be sent from one party to another without going through a financial institution. Despite all of its advantages, **predefined finite monetary supply inevitably leads to price volatility** which makes Bitcoin suboptimal as a medium of exchange, store of value or unit of account. We propose a solution to the price stabilization problem using a **decentralized currency unit** which evolves from being collateral-backed to being regulated by an autonomous monetary policy as the network receives wider adoption.
 

@@ -2,9 +2,12 @@
 title: "Jacob Steeves"
 link: "https://www.linkedin.com/in/jacob-robert-steeves-7b0629b8/"
 linkType: "linkedin"
-weight: 5
+weight: 1
 ---
 *Monte-Carlo Simulation*
 
-Google
+Machine Learning engineer 
 
+@ Google
+
+@ Knowm (DARPA SyNAPSE)

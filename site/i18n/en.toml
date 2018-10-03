@@ -7,6 +7,9 @@ other = "Your e-mail"
 [stableunit]
 other = "What is StableUnit"
 
+[how]
+other = "How does it work"
+
 [team]
 other = "Our team"
 
@@ -16,8 +19,11 @@ other = "Roadmap"
 [contributors]
 other = "Our contributors"
 
+[advisors]
+other = "Our advisors"
+
 [join]
-other = "Join as a contributor"
+other = "Join us"
 
 [usecases]
 other = "Use cases"
