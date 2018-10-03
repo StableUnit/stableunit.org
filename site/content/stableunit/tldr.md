@@ -3,8 +3,8 @@ title: "TLDR"
 weight: 2
 ---
 
-Stablecoin. 
-
-Decentralized dollar.
+Decentralized currency.
 
 Stable-price bitcoin.
+
+Stablecoin. 

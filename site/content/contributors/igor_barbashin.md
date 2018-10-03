@@ -6,8 +6,8 @@ weight: 3
 ---
 *Agent-based simulation (view)*
 
-Senior Frontend Developer  
-
+12 years Frontend Developement  
+@ CryptoKitties
 
 
 

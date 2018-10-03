@@ -1,8 +1,8 @@
 ---
 title: "James Key"
-role: "Lead researcher"
-subtitle: "Math degree. Winner of numerous CS/AI competitions"
-link: "/StableUnit-whitepaper.pdf"
+role: "Blockchain researcher"
+subtitle: "Quantum computing researcher. Exec at blockchain @ UBC. @ Blockchain Intelligence Group. "
+link: "https://www.linkedin.com/in/james-key-17666059/"
 linkType: "linkedin"
 avatar: "/img/jameskey.jpg"
 weight: 2

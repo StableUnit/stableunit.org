@@ -6,5 +6,8 @@ weight: 1
 ---
 *Monte-Carlo Simulation*
 
-Google
+Machine Learning engineer 
 
+@ Google
+
+@ Knowm (DARPA SyNAPSE)

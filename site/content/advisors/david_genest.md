@@ -7,3 +7,5 @@ weight: 2
 *Analyst & Financial Modeler*
 
 Imperial Oil / ExxonMobil
+
+Genex Capital
