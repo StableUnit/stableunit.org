@@ -1,10 +1,28 @@
 <div class="social">
-  <a href="https://mailchi.mp/7387449b05fb/blockchain_research" class="link bold"> {{ i18n "subscribe" }} →</a>
-  <ul class="social__list">
-    {{ range .Site.Data.meta.social }}
-      <li class="social__item">
-        <a class="social__item-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="heading__subscription-block">
+        <form action="/subscribe" method="post" class="heading__subscription-form">
+          <label class="heading__subscription-label-container">
+            <span class="heading__subscription-label">Subscribe for updates:</span>
+            <div class="heading__subscription-input-container link bold">
+              <input class="heading__subscription-input" type="text" placeholder="Your e-mail">
+              <input class="heading__subscription-submit" type="submit" value=" →">
+            </div>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <ul class="social__list">
+        {{ range .Site.Data.meta.social }}
+        <li class="social__item">
+          <a class="social__item-link" href="{{ .url }}" target="_blank">
+            {{ partial "share-link.html" .title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
 </div>

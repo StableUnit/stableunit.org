@@ -72,6 +72,11 @@ window.addEventListener('load', function() {
     for (let k = 0; k < sections.length; k++) {
       const pageOffset = window.pageYOffset;
       const currentSection = document.getElementById(sections[k].slice(1));
+
+      if (!currentSection) {
+        continue;
+      }
+
       const currentSectionHeight = currentSection.offsetHeight;
       const currentSectionOffset = currentSection.offsetTop;
 
