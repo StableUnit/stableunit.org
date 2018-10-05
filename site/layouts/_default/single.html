@@ -1,9 +1,7 @@
 {{ define "main" }}
-  <section class="container">
-    <section>
-      {{ .Content }}
-
-      {{ partial "social_buttons" . }}
-    </section>
-  </section>
+<div class="container">
+  <div class="col-xs-12 content">
+    {{ .Content }}
+  </div>
+</div>
 {{end}}
