@@ -843,7 +843,7 @@ section.mission strong {
 }
 
 .heading .social {
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .social .icon {
@@ -950,6 +950,10 @@ a.slider__button_active:after {
 
   .heading__title {
     margin-bottom: 70px;
+  }
+
+  .heading .social {
+    margin-top: 30px;
   }
 
   .social__item {
