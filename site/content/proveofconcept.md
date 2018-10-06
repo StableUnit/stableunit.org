@@ -20,3 +20,5 @@ Bitcoin can’t be used as everyday cash, means of saving or international mediu
 
 [Link to simulation](/simulation)
 
+[Simulation results](/simulation/results)
+
