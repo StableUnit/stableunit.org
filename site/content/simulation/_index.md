@@ -764,7 +764,3 @@ plot_reserve_risk_by_spread(risk_by_spread, 0.8)
 !jupyter nbconvert main-jupyter.ipynb --to html
 ```
 
-[NbConvertApp] Converting notebook main-jupyter.ipynb to html
-
-[NbConvertApp] Writing 714965 bytes to main-jupyter.html
-
