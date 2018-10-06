@@ -544,11 +544,14 @@ print ("Done.")
 ​
 print ("Plotting results...")
 ```
-```bash
+```python
 plot_reserve_ratio(results)
 plot_circulation(results)
 plot_bitcoin_price(results)
 plot_su_price(results)
+```
+
+```
 Run experiment with params... 
 total steps: 1000000.00
 total trials: 1.00
@@ -565,7 +568,21 @@ highest bid: 0.990
 print step: False
 Done.
 Plotting results...
-```  
+```
+
+![png](/simulation/output_16_1.png)
+
+
+
+![png](/simulation/output_16_2.png)
+
+
+
+![png](/simulation/output_16_3.png)
+
+
+
+![png](/simulation/output_16_4.png)
 
 ### Run a multiple trials using the volatility parameters derived from the previous step 
 
@@ -603,10 +620,10 @@ plot_reserve_ratio(results)
 plot_circulation(results)
 plot_bitcoin_price(results)
 plot_su_price(results)
-```
+``` 
 
-```bash
-Run experiment with params... 
+```
+Run experiment with params...
 total steps: 10000.00
 total trials: 1000.00
 delta t: 1.0000
@@ -623,6 +640,16 @@ print step: False
 Done.
 Plotting results...
 ``` 
+
+![png](/simulation/output_18_1.png)
+
+
+
+![png](/simulation/output_18_2.png)
+
+
+
+![png](/simulation/output_18_3.png)
 
 ### Functions for computing the cumulative probability of the reserve dropping bellow a threshold.
 
@@ -738,6 +765,11 @@ plot_reserve_risk(results)
 plot_success_likelihood(results)
 ```
 
+![png](/simulation/output_22_0.png)
+
+
+![png](/simulation/output_22_1.png)
+
 Conclusion: Using the above simplified contract and by deriving best effort estimations for the price drift and volatility parameters for Bitcoin and tether using historical prices, we estimate risk bounds for the contract reserve. These cumulative probabilities at different bounds reflect the liklihood that the contract reaches this state within 3 years time. We see that the likelihood of the contract dropping bellow a 10 percent bound is 22%. 
 
 Below: Other experiments.
@@ -779,14 +811,15 @@ def plot_reserve_risk_by_spread(risk_by_spread, bound):
 
 In [144]:
 
-```python
+```
 plot_reserve_risk_by_spread(risk_by_spread, 0.8)
 ```
+
+![png](/simulation/output_30_0.png)
+
 
 In [165]:
 
 ```python
 !jupyter nbconvert main-jupyter.ipynb --to html
-[NbConvertApp] Converting notebook main-jupyter.ipynb to html
-[NbConvertApp] Writing 714965 bytes to main-jupyter.html
 ```

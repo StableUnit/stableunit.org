@@ -492,24 +492,24 @@ plot_bitcoin_price(results)
 plot_su_price(results)
 ```
 
-    Run experiment with params... 
-     total steps: 1000000.00
-     total trials: 1.00
-     delta t: 1.0000
-     btc price drift: 0.0000
-     btc price volatility: 0.0391
-     su price drift: 0.0000
-     su price volatility: 0.0062
-     initial reserve ratio: 1.0000
-     initial btc reserve: 100.0000
-     initial btc price: 8000.0000
-     lowest ask: 1.010
-     highest bid: 0.990
-     print step: False
-    Done.
-    Plotting results...
-
-
+```
+Run experiment with params... 
+total steps: 1000000.00
+total trials: 1.00
+delta t: 1.0000
+btc price drift: 0.0000
+btc price volatility: 0.0391
+su price drift: 0.0000
+su price volatility: 0.0062
+initial reserve ratio: 1.0000
+initial btc reserve: 100.0000
+initial btc price: 8000.0000
+lowest ask: 1.010
+highest bid: 0.990
+print step: False
+Done.
+Plotting results...
+```
 
 ![png](/simulation/output_16_1.png)
 
@@ -564,23 +564,24 @@ plot_bitcoin_price(results)
 plot_su_price(results)
 ```
 
-    Run experiment with params... 
-     total steps: 10000.00
-     total trials: 1000.00
-     delta t: 1.0000
-     btc price drift: 0.0000
-     btc price volatility: 0.0391
-     su price drift: 0.0000
-     su price volatility: 0.0062
-     initial reserve ratio: 1.0000
-     initial btc reserve: 100.0000
-     initial btc price: 8000.0000
-     lowest ask: 1.010
-     highest bid: 0.990
-     print step: False
-    Done.
-    Plotting results...
-
+``` 
+Run experiment with params...
+total steps: 10000.00
+total trials: 1000.00
+delta t: 1.0000
+btc price drift: 0.0000
+btc price volatility: 0.0391
+su price drift: 0.0000
+su price volatility: 0.0062
+initial reserve ratio: 1.0000
+initial btc reserve: 100.0000
+initial btc price: 8000.0000
+lowest ask: 1.010
+highest bid: 0.990
+print step: False
+Done.
+Plotting results...
+```
 
 
 ![png](/simulation/output_18_1.png)
