@@ -760,8 +760,3 @@ plot_reserve_risk_by_spread(risk_by_spread, 0.8)
 
 ![png](/simulation/output_30_0.png)
 
-
-```python
-!jupyter nbconvert main-jupyter.ipynb --to html
-```
-
