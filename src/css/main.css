@@ -55,6 +55,10 @@ a {
   background-color: #151515;
 }
 
+.content img {
+  max-width: 100%;
+}
+
 h1, h2 {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;

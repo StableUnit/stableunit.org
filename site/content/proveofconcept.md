@@ -7,10 +7,10 @@ weight: 1
 Bitcoin can’t be used as everyday cash, means of saving or international medium of exchange because of it volatile. StableUnit solved this problem by offering complete decentralized privacy stable currency. It’s fully backed by crypto collateral on growth stage. And utilizes black-swan resistant multi-layer stabilization mechanism on highest capitalization. 
 
 ## MultiLayer Stabilization
-[picture of stabilization]
+![png](/concept/multilayer_stabilisation_sims.png)
 
 ## Agent-based simulation
-[picture of simulation]
+![png](/concept/sim_schema.png)
 
 ## Prove of concept
 
@@ -18,5 +18,5 @@ Bitcoin can’t be used as everyday cash, means of saving or international mediu
 
 ## Monte Carlo Simulation 
 
-[link to simulation]
+[Link to simulation](/simulation)
 
