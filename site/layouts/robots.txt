@@ -1,3 +1,3 @@
 User-agent: *
 
-Disallow: proveofconcept_ewqr484123
+Disallow: /proveofconcept_ewqr484123

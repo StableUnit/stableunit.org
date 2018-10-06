@@ -274,8 +274,12 @@ section h1 {
   margin-bottom: 50px;
 }
 
+.heading__hero {
+  text-align: right;
+}
+
 .heading__hero img {
-  width: 100%;
+  max-height: 364px;
 }
 
 .heading__subscription-block {
@@ -305,6 +309,7 @@ section h1 {
 
 .heading__subscription-input-container {
   display: flex;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -843,7 +848,7 @@ section.mission strong {
 }
 
 .heading .social {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .social .icon {

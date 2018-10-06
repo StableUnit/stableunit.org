@@ -1,3 +1,7 @@
+---
+title: "Information for contractors"
+weight: 1
+---
 # Information for contractors
 If you receive contract offer for StableUnit, congratulations! When you successfully complete your work you can justly consider yourself a part of blockchain revolution!
 
