@@ -932,7 +932,7 @@ a.slider__button_active:after {
 }
 
 pre {
-  overflow: scroll;
+  overflow: auto;
   background-color: #f2f2f2;
   padding: 20px;
 }
