@@ -931,6 +931,12 @@ a.slider__button_active:after {
   filter: invert(1);
 }
 
+pre {
+  overflow: scroll;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 14px;
