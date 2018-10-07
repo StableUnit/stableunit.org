@@ -1,4 +1,4 @@
-# StableUnit — stable currency 
+# StableUnit 
 <div>
-<h2>Decentralized low-volatility cryptocurrency</h2>
+<h2>Decentralized privacy stable currency</h2>
 </div>
