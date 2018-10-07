@@ -49,7 +49,7 @@ We run 1000 trials with each trial containing 1000 steps. The time delta is set 
 
 ## Python Source code.
 
-https://gitlab.com/stable_unit_simulations/py-simulation
+[https://gitlab.com/stable_unit_simulations/py-simulation](See on Gitlab)
 
 ## Results.
 
