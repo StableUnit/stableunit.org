@@ -3,19 +3,18 @@
     <div class="row heading__title">
       {{ with .Site.GetPage "page" "landing/_heading.md" }}
         <div class="col-xs-12 col-sm-11 col-md-8">
-          {{ .Content }}
+          <div class="row">
+            <div class="col-xs-12">
+              {{ .Content }}
+            </div>
+            <div class="col-xs-12">
+              {{ partial "social.html" . }}
+            </div>
+          </div>
         </div>
       {{ end }}
       <div class="col-md-4 hidden-xs hidden-sm heading__hero">
-        <img src="hero1_2x_p.png" alt="Hero">
-      </div>
-    </div>
-    <div class="row heading__media">
-      <div class="col-sm-6 col-xs-12">
-        {{ partial "whitepapers.html" . }}
-      </div>
-      <div class="col-sm-6 col-xs-12">
-        {{ partial "social.html" . }}
+        <img src="img/penguin_compressed.png" alt="Hero">
       </div>
     </div>
     <div class="separator"></div>

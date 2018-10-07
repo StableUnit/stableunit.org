@@ -26,7 +26,7 @@
     },
     {
       "title": "medium",
-      "url": "https://medium.com/stableunit"
+      "url": "https://medium.com/@lebed.2045"
     }
   ],
   "roadmap": [
@@ -50,12 +50,14 @@
     {
       "title": "Standalone blockchain where SU is the core token",
       "date": "Q3 2019",
-      "width": 30
+      "width": 30,
+      "reverse": true
     },
     {
       "title": "Additional functionality for privacy transactions",
       "date": "Q4 2019",
-      "width": 20
+      "width": 20,
+      "reverse": true
     }
   ]
 }

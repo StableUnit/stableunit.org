@@ -55,6 +55,10 @@ a {
   background-color: #151515;
 }
 
+.content img {
+  max-width: 100%;
+}
+
 h1, h2 {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
@@ -77,6 +81,80 @@ h3 {
 
 div.wrap {
   margin: 76px 10px 10px;
+}
+
+.link {
+  color: #F96F21;
+  transition: color 0.25s;
+  cursor: pointer;
+}
+
+.underlined {
+  transition: color 0.25s;
+  font-weight: 500;
+}
+
+.link, .underlined {
+  display: inline-block;
+  line-height: 1.5em;
+  position: relative;
+}
+
+.underlined:after {
+  height: 2px;
+}
+
+.link:hover {
+  color: #F96F21;
+}
+
+.link:after {
+  background-color: #F96F21;
+  height: 1px;
+}
+
+.link:after, .underlined:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(1);
+  transform-origin: left center;
+  width: 100%;
+  transition: transform 0.25s;
+}
+
+.link.disabled {
+  color: rgba(21, 21, 21, 0.3);
+}
+
+.link.disabled:after {
+  display: none;
+}
+
+.link:hover:after {
+  transform: scaleX(0);
+  transform-origin: right center;
+}
+
+.link.bold {
+  border-bottom-width: 2px;
+}
+
+.link.bold:after, .underlined.bold:after {
+  height: 2px;
+}
+
+.black {
+  color: #151515;
+}
+
+.link.black .arrow {
+  color: #F96F21;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .dark {
@@ -200,8 +278,74 @@ section h1 {
   margin-bottom: 50px;
 }
 
+.heading__hero {
+  text-align: right;
+}
+
 .heading__hero img {
+  max-height: 364px;
+}
+
+.heading__subscription-block {
+  border: 2px solid #F96F21;
+  padding: 35px;
+  transition: background-color 0.25s;
+}
+
+.heading__subscription-form {
+  display: block;
   width: 100%;
+}
+
+.heading__subscription-label-container {
+  display: block;
+}
+
+.heading__subscription-label {
+  color: #F96F21;
+  font-weight: bold;
+}
+
+.heading__subscription-block {
+  display: flex;
+  padding: 20px 35px;
+}
+
+.heading__subscription-input-container {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.heading__subscription-input::-webkit-input-placeholder,
+.heading__subscription-input::-moz-placeholder,
+.heading__subscription-input::-moz-placeholder,
+.heading__subscription-input:-ms-input-placeholder,
+.heading__subscription-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+.heading__subscription-input,
+.heading__subscription-submit {
+  border:none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 3px 0;
+}
+
+.heading__subscription-input {
+  flex-grow: 1;
+}
+
+.heading__subscription-submit {
+  cursor: pointer;
+  width: 40px;
 }
 
 .mission {
@@ -453,7 +597,7 @@ section.mission strong {
 
 .team__item {
   position: relative;
-  height: 330px;
+  height: 392px;
   overflow: hidden;
 }
 
@@ -643,7 +787,7 @@ section.mission strong {
 }
 
 .daico {
-  padding: 120px 0 100px;
+  padding: 120px 0 80px;
 }
 
 .daico__header {
@@ -674,80 +818,6 @@ section.mission strong {
 
 .daico ul {
   margin: 0 0 45px 0;
-}
-
-.link {
-  color: #F96F21;
-  transition: color 0.25s;
-  cursor: pointer;
-}
-
-.underlined {
-  transition: color 0.25s;
-  font-weight: 500;
-}
-
-.link, .underlined {
-  display: inline-block;
-  line-height: 1.5em;
-  position: relative;
-}
-
-.underlined:after {
-  height: 2px;
-}
-
-.link:hover {
-  color: #F96F21;
-}
-
-.link:after {
-  background-color: #F96F21;
-  height: 1px;
-}
-
-.link:after, .underlined:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: scaleX(1);
-  transform-origin: left center;
-  width: 100%;
-  transition: transform 0.25s;
-}
-
-.link.bold:after, .underlined.bold:after {
-  height: 2px;
-}
-
-.link.disabled {
-  color: rgba(21, 21, 21, 0.3);
-}
-
-.link.disabled:after {
-  display: none;
-}
-
-.link:hover:after {
-  transform: scaleX(0);
-  transform-origin: right center;
-}
-
-.link.bold {
-  border-bottom-width: 2px;
-}
-
-.black {
-  color: #151515;
-}
-
-.link.black .arrow {
-  color: #F96F21;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .whitepapers {
@@ -781,6 +851,10 @@ section.mission strong {
   vertical-align: top;
 }
 
+.heading .social {
+  margin-top: 40px;
+}
+
 .social .icon {
   width: 36px;
   fill: #999;
@@ -789,7 +863,7 @@ section.mission strong {
 
 .social__list {
   list-style-type: none;
-  margin: 24px 0 0;
+  margin: 40px 0 0;
   font-weight: 400;
   padding: 0;
 }
@@ -800,25 +874,17 @@ section.mission strong {
 
 .social__item-link {
   color: white;
-  text-decoration: none;
-  position: relative;
+  display: inline-block;
 }
 
 .social__item-link:hover {
-  color: #a1a1a1;
-}
-
-.social__item:after {
-  content: "\00a0—\00a0";
-}
-
-.social__item:last-child:after {
-  content: "";
+  color: #F96F21;
 }
 
 footer {
   background-color: #151515;
   color: white;
+  margin-top: 20px;
   padding: 60px 0;
 }
 
@@ -869,6 +935,12 @@ a.slider__button_active:after {
   filter: invert(1);
 }
 
+pre {
+  overflow: auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 14px;
@@ -895,13 +967,12 @@ a.slider__button_active:after {
     margin-bottom: 70px;
   }
 
-  .social__item {
-    display: block;
-    margin: 5px 0;
+  .heading .social {
+    margin-top: 30px;
   }
 
-  .social__item:after {
-    content: "";
+  .social__item {
+    margin: 5px 0;
   }
 
   .vision__musk {
@@ -1171,6 +1242,7 @@ a.slider__button_active:after {
 
   .team__item-image {
     margin: 0 20px 0 0;
+    flex-basis: 100%;
   }
 
   .team__item-title {

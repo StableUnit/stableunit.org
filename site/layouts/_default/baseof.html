@@ -26,7 +26,7 @@
     <meta property="og:image:width" content="280">
     <meta property="og:image:height" content="280">
     <base href="{{ $baseUrl }}">
-    <title>{{ $.Site.Title }}</title>
+    {{ partial "title" . }}
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/main.css"/>
     {{ template "_internal/google_analytics_async.html" . }}
