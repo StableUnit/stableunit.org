@@ -429,7 +429,7 @@ section.mission strong {
 .vision__musk-inner {
   position: absolute;
   left: 0;
-  bottom: 41px;
+  bottom: 0;
 }
 
 .vision__title {
@@ -453,7 +453,7 @@ section.mission strong {
 }
 
 .roadmap {
-  padding-top: 250px;
+  padding-top: 210px;
   padding-bottom: 327px;
   border-bottom: 1px solid rgba(21, 21, 21, 0.1);
 }
@@ -861,9 +861,12 @@ section.mission strong {
   padding: 10px;
 }
 
+.social__follow-us {
+  font-weight: bold;
+}
+
 .social__list {
   list-style-type: none;
-  margin: 40px 0 0;
   font-weight: 400;
   padding: 0;
 }
@@ -961,6 +964,26 @@ pre {
 
   .heading {
     padding-top: 30px;
+  }
+
+  .heading .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .heading .container:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/penguin_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   .heading__title {
@@ -1115,6 +1138,10 @@ pre {
 
   .header__nav-absolute .social__item {
     letter-spacing: normal;
+  }
+
+  .social__follow-us {
+    margin-top: 25px;
   }
 
   .header__copyright {
