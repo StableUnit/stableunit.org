@@ -156,7 +156,6 @@ class State:
                ' btc_price ' + "%0.4f" % self.btc_prices[-1] + \
                ' btc_value ' + "%0.4f" % self.btc_reserve_value[-1] + \
                ' reserve_ratio ' + "%0.4f" % self.reserve_ratio[-1]
-
 ```
 
 Build plotting functions for realizing the individual outcomes from a set of trials.
@@ -529,17 +528,8 @@ Plotting results...
 ```
 
 ![png](/simulation/output_16_1.png)
-
-
-
 ![png](/simulation/output_16_2.png)
-
-
-
 ![png](/simulation/output_16_3.png)
-
-
-
 ![png](/simulation/output_16_4.png)
 
 
@@ -602,17 +592,8 @@ Plotting results...
 
 
 ![png](/simulation/output_18_1.png)
-
-
-
 ![png](/simulation/output_18_2.png)
-
-
-
 ![png](/simulation/output_18_3.png)
-
-
-
 ![png](/simulation/output_18_4.png)
 
 
@@ -728,8 +709,6 @@ plot_success_likelihood(results)
 ```
 
 ![png](/simulation/output_22_0.png)
-
-
 ![png](/simulation/output_22_1.png)
 
 ## Other experiments.
