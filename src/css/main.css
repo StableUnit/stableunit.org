@@ -348,6 +348,10 @@ section h1 {
   width: 40px;
 }
 
+.heading__links-block {
+  margin-top: 20px;
+}
+
 .mission {
   color: white;
   background-color: #151515;

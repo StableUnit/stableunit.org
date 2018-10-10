@@ -69,35 +69,6 @@ import pandas as pd
 ;
 ```
 
-    Requirement already satisfied: numpy in /usr/local/lib/python2.7/site-packages (1.13.3)
-    Requirement already satisfied: pandas in /usr/local/lib/python2.7/site-packages (0.22.0)
-    Requirement already satisfied: python-dateutil in /usr/local/lib/python2.7/site-packages (from pandas) (2.7.2)
-    Requirement already satisfied: numpy>=1.9.0 in /usr/local/lib/python2.7/site-packages (from pandas) (1.13.3)
-    Requirement already satisfied: pytz>=2011k in /usr/local/lib/python2.7/site-packages (from pandas) (2018.3)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python2.7/site-packages (from python-dateutil->pandas) (1.11.0)
-    Requirement already satisfied: matplotlib in /usr/local/lib/python2.7/site-packages (2.2.2)
-    Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /usr/local/lib/python2.7/site-packages (from matplotlib) (2.2.0)
-    Requirement already satisfied: backports.functools-lru-cache in /usr/local/lib/python2.7/site-packages (from matplotlib) (1.5)
-    Requirement already satisfied: subprocess32 in /usr/local/lib/python2.7/site-packages (from matplotlib) (3.2.7)
-    Requirement already satisfied: pytz in /usr/local/lib/python2.7/site-packages (from matplotlib) (2018.3)
-    Requirement already satisfied: six>=1.10 in /usr/local/lib/python2.7/site-packages (from matplotlib) (1.11.0)
-    Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python2.7/site-packages (from matplotlib) (2.7.2)
-    Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python2.7/site-packages (from matplotlib) (1.0.1)
-    Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python2.7/site-packages (from matplotlib) (0.10.0)
-    Requirement already satisfied: numpy>=1.7.1 in /usr/local/lib/python2.7/site-packages (from matplotlib) (1.13.3)
-    Requirement already satisfied: setuptools in /usr/local/lib/python2.7/site-packages (from kiwisolver>=1.0.1->matplotlib) (39.1.0)
-
-
-
-
-
-    ''
-
-
-
-    Build two class objects for simulation: 1) A Parameters object which will hold simulation specific parameters and 2) A State object which will hold the current and historical outcomes from a single trial.
-
-
 ```python
 class Params:
     """Params hold a set of hyper parameters relevant to a simulation experiment
@@ -767,10 +738,7 @@ plot_success_likelihood(results)
 
 ![png](/simulation/output_22_1.png)
 
-
-Conclusion: Using the above simplified contract and by deriving best effort estimations for the price drift and volatility parameters for Bitcoin and tether using historical prices, we estimate risk bounds for the contract reserve. These cumulative probabilities at different bounds reflect the liklihood that the contract reaches this state within 3 years time. We see that the likelihood of the contract dropping bellow a 10 percent bound is 22%. 
-
-Below: Other experiments.
+## Other experiments.
 
 ```python
 # Simulation Paramters.
@@ -811,3 +779,7 @@ plot_reserve_risk_by_spread(risk_by_spread, 0.8)
 ```
 
 ![png](/simulation/output_30_0.png)
+
+## Conclusion
+
+Using the above simplified contract and by deriving best effort estimations for the price drift and volatility parameters for Bitcoin and tether using historical prices, we estimate risk bounds for the contract reserve. These cumulative probabilities at different bounds reflect the liklihood that the contract reaches this state within 3 years time. We see that the likelihood of the contract dropping bellow a 10 percent bound is 22%. 
