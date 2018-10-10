@@ -1,3 +1,8 @@
+---
+title: "StableUnit simulation"
+layout: "simulation"
+type: "simulation"
+---
 # Stable Unit Simulations: A stabilization overview
 
 
@@ -317,7 +322,7 @@ def stable_unit_price_delta(state, params):
              np.random.standard_normal())
 ```
 
-Build the do_step function. This function evaluates the next contract state given a current state and simulation parameters. 
+Build the `do_step` function. This function evaluates the next contract state given a current state and simulation parameters. 
 
 ```python
 def do_step(params, state):
