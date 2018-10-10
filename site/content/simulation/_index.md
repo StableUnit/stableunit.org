@@ -66,7 +66,6 @@ import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import math
 import pandas as pd
-;
 ```
 
 ```python
@@ -279,8 +278,6 @@ def plot_circulation(results):
     ax2.legend()
 
     plt.show()
-    
-    
 ```
 
 Build GBM movement functions which return increments in price and demand. When called in sequence these functions produce the random walks which are used as input to the contract.  
@@ -319,7 +316,6 @@ def stable_unit_price_delta(state, params):
             (params.su_price_drift * params.delta_t + \
              params.su_price_volatility * math.sqrt(params.delta_t) * \
              np.random.standard_normal())
-    
 ```
 
 Build the do_step function. This function evaluates the next contract state given a current state and simulation parameters. 
@@ -410,7 +406,6 @@ def do_step(params, state):
                 'btc_value', "%0.4f" % btc_reserve_value, \
                 'reserve_ratio', "%0.4f" % reserve_ratio)
 
-
     return state
 ```
 
@@ -438,7 +433,6 @@ def run_experiment(params):
     for trial in range(0, params.total_trials):
         results.append(run_trial(params))
     return results
-
 ```
 
 Estimation of the Bitcoin and SU drift and volatility parameters based on historical returns. 
