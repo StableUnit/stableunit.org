@@ -796,9 +796,11 @@ section.mission strong {
 
 .daico__header {
   position: relative;
+  overflow: hidden;
 }
 
 .daico__header:after {
+  display: none;
   content: "";
   position: absolute;
   width: 100%;
@@ -810,9 +812,18 @@ section.mission strong {
 
 .daico__header-wrapper {
   padding-right: 24px;
-  background-color: white;
   position: relative;
   z-index: 5;
+}
+
+.daico__header-wrapper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 23px;
+  left: 100%;
+  background-color: #151515;
 }
 
 .daico h4 {
@@ -1336,11 +1347,18 @@ pre {
 
   .daico__header {
     margin-bottom: 40px;
+    overflow: initial;
   }
 
   .daico__header:after {
+    display: initial;
     top: 60px;
     width: 50%;
+    overflow: visible;
+  }
+
+  .daico__header-wrapper:after {
+    display: none;
   }
 }
 
