@@ -1281,8 +1281,6 @@ pre {
   }
 
   .team__item-inner {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
   }
 
