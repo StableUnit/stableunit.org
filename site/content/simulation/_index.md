@@ -3,17 +3,19 @@ title: "StableUnit simulation"
 layout: "simulation"
 type: "simulation"
 ---
-# Stable Unit Simulations: A stabilization overview
+# Monte-Carlo simulation
 
+A stabilization overview
+---
 
-## Summary. 
+## Summary
 The Stable Unit token contract is designed to maintain a decentralized currency with low price volatility and low risk to its store of value. 
 
 As its means of achieving this, the contract uses internal Bitcoin collateral to dampen price movements: when the price increases above the pegged price, the contract issues new tokens to arbitrageurs willing to buy them for a price nearer the peg and, inversely, when the price decreases below the peg, the contract alleviates this downward trend by buying them back for a price closer to the peg. This simple mechanism is parameterized by the contract ‘spread’ parameter, its buy back price below the dollar and the sell price above the dollar, which changes in time to minimize the contract risk and price volatility. 
 
 We use statistical methods to evaluate the strength of this mechanism along two axis, (1) reserve risk (2) the token volatility.  As a result, we show an empirical relationship between these two axis, and give a justification for how they could be adjusted to increase or decrease the risk to the token’s stability and long term store of value.
 
-## Contract Overview.
+## Contract Overview
 
 Abstractly, the Stable Unit contract is a machine which captures the demand for a stable currency and transforms it into a reserve capable of maintaining a non-volatile price. This is similar in nature to the model of an insurance company which transforms the demand for risk reduction into a reserve capable of intervening when those risks occur. 
 
@@ -21,7 +23,7 @@ The Stable Unit contract captures the demand for a stable currency by acting as 
 
 This system is parametrized by a ‘spread’ parameter determining the lowest bid and highest ask offered by the contract to individuals attempting to buy or to sell Stable Units. 
 
-## Purpose.
+## Purpose
 
 Selection of this value will be achieved by a decentralized voting mechanism carried out by system shareholders who profit from the stability the liquidity of the stable token. We predict that when the network is small for instance, and demand varies widely, the foundation will wish to hold the system risk low, ensuring that supply increases are small and the contract reserve is protected. During this period, we trade liquidity for risk aversion.
 
@@ -29,7 +31,7 @@ Inversely, when the market for Stable Units has grown, demand shocks of sufficie
 
 For this reason, it is highly important that the foundation can accurately understand the mechanics of the spread parameter. We employ a number of statistical simulations in an attempt to understand it fully.
 
-## Method.
+## Method
 
 We employ Monte Carlo methods to statistically approximate the outcome distribution of the contract under varying parameter choices. The Monte Carlo simulation is driven by two non-correlated random processes with volatility parameter drawn from Bitcoin’s historical prices. We define two metrics of interest:
 
@@ -38,7 +40,7 @@ We employ Monte Carlo methods to statistically approximate the outcome distribut
 **Token Volatility:** The mean and variance of the Stable Unit price around the peg. Instance, ‘Given chosen spread and our assumptions about the behaviour of the Bitcoin and exterior Stable Unit price distributions, the real Stable Unit price will remain fixed with mean $0.99 and variance 0.1 around the peg.’
 
 
-## Contract Behaviour.
+## Contract Behaviour
 
 We simulate the behaviour of the Stable Unit contract using two non-correlated Geometric Brownian Motions of 1) Bitcoin and 2) Stable Unit price. In both instances we use a standard GBM model with a gaussian Wiener process. We evaluate the price difference between each contract step using the following step rule: = μdt + σ dW
 
@@ -48,15 +50,13 @@ These two motions interact with the contract according to the following rules:
 - When the change in Stable Unit demand is negative, this reflects a net negative demand for Stable Units at the highest bid price offered by the contract.  The contract burns Stable Units and redeems them for Bitcoin held in reserve.
 
 
-## Experiment.
+## Experiment
  
 We run 1000 trials with each trial containing 1000 steps. The time delta is set to 1.0 to reflect that each step represents the outcome of a single day. The trials therefore run over a period approximately equal to 3 years. We fix the Bitcoin price volatility at 0.01 which is derived from the historical price movements over the previous 3 years to best fit outcomes. The bitcoin price drift is set to 0 reflecting zero knowledge about its price direction. The Stable Unit demand motion is set equally to the Bitcoin price with 0.01 volatility and 0.0 drift term. We perform no price rebasing.
 
-## Python Source code.
+## Python Source code
 
 [See on Gitlab](https://gitlab.com/stable_unit_simulations/py-simulation)
-
-## Results.
 
 We use two GBMs (Geometric Brownian Motion) as input to a mock Stable Unit contract as a means of estimating the likelyhood of contract outcomes.
 
@@ -595,6 +595,7 @@ Done.
 Plotting results...
 ```
 
+## Results
 
 ![png](/simulation/output_18_1.png)
 ![png](/simulation/output_18_2.png)
@@ -716,7 +717,7 @@ plot_success_likelihood(results)
 ![png](/simulation/output_22_0.png)
 ![png](/simulation/output_22_1.png)
 
-## Other experiments.
+## Other experiments
 
 ```python
 # Simulation Paramters.
@@ -761,3 +762,5 @@ plot_reserve_risk_by_spread(risk_by_spread, 0.8)
 ## Conclusion
 
 Using the above simplified contract and by deriving best effort estimations for the price drift and volatility parameters for Bitcoin and tether using historical prices, we estimate risk bounds for the contract reserve. These cumulative probabilities at different bounds reflect the liklihood that the contract reaches this state within 3 years time. We see that the likelihood of the contract dropping bellow a 10 percent bound is 22%. 
+
+Therefore, the contract reserve without any additional mechanisms is able to provide necessary liquidity by its own with 78% probability which increases during the time. To further increase it close to 100% - it's necessary to use an initial reserve funding or additional stabilization mechanism such as multi-layer model proposed in the [whitepaper](/StableUnit-whitepaper.pdf).
