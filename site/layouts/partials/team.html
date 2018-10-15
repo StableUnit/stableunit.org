@@ -11,18 +11,24 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-9 team__item">
             <div class="team__item-inner">
-              <div class="team__item-image" style="background-image: url('{{ .Params.avatar }}');" title="{{ .Title }}"></div>
-              <div class="team__inner-info">
-                <h3 class="team__item-title">
-                  <a href="{{ .Params.link }}" target="_blank" rel="noopener">
-                    <span class="link bold black">{{ .Title | safeHTML }}</span>
-                    <span class="social-link">
+              <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                  <div class="team__item-image" style="background-image: url('{{ .Params.avatar }}');" title="{{ .Title }}"></div>
+                </div>
+                <div class="col-xs-6 col-sm-12">
+                  <div class="team__inner-info">
+                    <h3 class="team__item-title">
+                      <a href="{{ .Params.link }}" target="_blank" rel="noopener">
+                        <span class="link bold black">{{ .Title | safeHTML }}</span>
+                        <span class="social-link">
                       {{ partial "social-link.html" .Params.linkType }}
                     </span>
-                  </a>
-                </h3>
-                <p class="team__item-role">{{ .Params.role }}</p>
-                <p class="team__item-subtitle">{{ .Params.subtitle }}</p>
+                      </a>
+                    </h3>
+                    <p class="team__item-role">{{ .Params.role }}</p>
+                    <p class="team__item-subtitle">{{ .Params.subtitle }}</p>
+                  </div>
+                </div>
               </div>
             </div>
             <input id="team__info-{{ $index }}" type="checkbox" class="team__more-arrow-checkbox">
