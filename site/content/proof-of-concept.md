@@ -4,7 +4,7 @@ weight: 1
 ---
 ## StableUnit overview
 
-Bitcoin can’t be used as everyday cash, means of saving or international medium of exchange because of it volatile. StableUnit solved this problem by offering complete decentralized privacy stable currency. It’s fully backed by crypto collateral on growth stage. And utilizes black-swan resistant multi-layer stabilization mechanism on highest capitalization. 
+Bitcoin cannot be used as everyday cash, a store of value, or international unit of account because of its volatility. StableUnit solves this problem with a completely decentralized and private stable cryptocurrency. It’s fully backed by crypto collateral while the system is small, and utilizes multiple layers of black-swan resistant mechanisms to maintain a stable price.
 
 ## Proof of concept
 
