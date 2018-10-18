@@ -1,0 +1,16 @@
+<svg
+  class="arrow"
+  xmlns="http://www.w3.org/2000/svg"
+  width="50"
+  height="20"
+>
+  <path
+    stroke="currentColor"
+    stroke-width="1"
+    d="M 0 10 L 35 10"
+  />
+  <path
+    fill="currentColor"
+    d="M 30 20 35 10 30 0 50 10 Z"
+  />
+</svg>

@@ -24,7 +24,42 @@ As a last resort, people will be incentivized via interest to lock up their fund
 
 ## Agent-based simulation
 [ Description of the methodology will be added soon.]
-![png](/concept/sim_schema.png)
+
+<div class="agent">
+  <div class="agent__group-wrapper">
+    <div class="agent__group agent__group_inputs">
+      <p class="agent__group-label">Inputs</p>
+      <div class="agent__group-item">Eth price</div>
+      <div class="agent__group-item">Demand</div>
+    </div>
+    <img class="agent__group-arrow" src="/concept/flowchart_arrow.svg">
+  </div>
+  <div class="agent__group-wrapper">
+    <div class="agent__group agent__group_users">
+      <p class="agent__group-label">Users</p>
+      <div class="agent__group-item">Retail Hodlers</div>
+      <div class="agent__group-item">Retail Traders</div>
+      <div class="agent__group-item">Arbitrage Bots</div>
+      <div class="agent__group-item">Trading Bots</div>
+      <div class="agent__group-item">Other Bots</div>
+    </div>
+    <img class="agent__group-arrow" src="/concept/flowchart_arrow.svg">
+  </div>
+  <div class="agent__group-wrapper">
+    <div class="agent__group agent__group_stabilization">
+      <p class="agent__group-label">Stabilization</p>
+      <div class="agent__group-item">Market Action/Liquidity</div>
+      <div class="agent__group-item">Reserve Backing</div>
+      <div class="agent__group-item">Bonds</div>
+      <div class="agent__group-item">Shares Dilution</div>
+      <div class="agent__group-item">Temporary Parking</div>
+    </div>
+    <img class="agent__group-arrow" src="/concept/flowchart_arrow.svg">
+  </div>
+  <div class="agent__group-wrapper agent__group-wrapper_link">
+    <a href="/simulation#results">Simulation results</a>
+  </div>
+</div>
 
 ## Monte Carlo Simulation 
 
