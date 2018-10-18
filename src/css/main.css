@@ -1085,7 +1085,6 @@ pre {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   text-align: center;
 }
 
@@ -1108,6 +1107,7 @@ pre {
 
 .agent__group-wrapper_link {
   justify-content: center;
+  padding: 0 20px;
 }
 
 .agent__group-arrow {
