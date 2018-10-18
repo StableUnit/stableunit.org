@@ -1101,14 +1101,12 @@ pre {
 }
 
 .agent__group-wrapper {
-  flex-basis: 28%;
   text-align: left;
   display: flex;
   align-items: center;
 }
 
 .agent__group-wrapper_link {
-  flex-basis: 20%;
   justify-content: center;
 }
 

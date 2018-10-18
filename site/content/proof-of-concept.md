@@ -49,8 +49,8 @@ As a last resort, people will be incentivized via interest to lock up their fund
     <div class="agent__group agent__group_stabilization">
       <p class="agent__group-label">Stabilization</p>
       <div class="agent__group-item">Market Action/Liquidity</div>
-      <div class="agent__group-item">Reserve Backing</div>
-      <div class="agent__group-item">Bonds</div>
+      <div class="agent__group-item">Reserve</div>
+      <div class="agent__group-item">REPOs</div>
       <div class="agent__group-item">Shares Dilution</div>
       <div class="agent__group-item">Temporary Parking</div>
     </div>
