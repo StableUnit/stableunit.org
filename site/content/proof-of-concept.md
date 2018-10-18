@@ -57,7 +57,7 @@ As a last resort, people will be incentivized via interest to lock up their fund
     <img class="agent__group-arrow" src="/concept/flowchart_arrow.svg">
   </div>
   <div class="agent__group-wrapper agent__group-wrapper_link">
-    <a href="/simulation#results">Simulation results</a>
+    <a href="https://simulation.stableunit.org">Simulation results</a>
   </div>
 </div>
 
