@@ -8,7 +8,7 @@
           return;
       }
 
-      const legalHidden = window.localStorage.getItem('legalHidden');
+      const legalHidden = window.localStorage.getItem('russianLegalHidden');
 
       if (legalHidden) {
           return;
@@ -28,7 +28,7 @@
           return;
       }
 
-      window.localStorage.setItem('legalHidden', 'true');
+      window.localStorage.setItem('russianLegalHidden', 'true');
 
       const legal = document.querySelector('.legal');
 
