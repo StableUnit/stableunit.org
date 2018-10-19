@@ -1061,14 +1061,14 @@ pre {
   position: fixed;
   display: none;
   right: 20px;
-  bottom: 20px;
-  max-width: 300px;
-  background-color: #151515;
-  color: white;
+  top: 80px;
+  left: 20px;
+  background-color: white;
+  color: #151515;
   box-sizing: border-box;
   padding: 20px 45px 20px 20px;
   box-shadow: 0 0 10px rgba(255,255,255,0.15);
-  margin-left: 20px;
+  z-index: 200;
 }
 
 .legal__close {
@@ -1455,6 +1455,11 @@ pre {
   .agent__group-arrow {
     transform: rotate(90deg);
     margin: 20px 0;
+  }
+
+  .legal {
+    bottom: 20px;
+    top: initial;
   }
 }
 
