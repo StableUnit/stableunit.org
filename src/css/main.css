@@ -55,6 +55,14 @@ a {
   background-color: #151515;
 }
 
+.content li li {
+  padding-left: 50px;
+}
+
+.content li li:before {
+  width: 24px;
+}
+
 .content img {
   max-width: 100%;
 }
