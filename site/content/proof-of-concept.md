@@ -6,9 +6,12 @@ weight: 1
 
 Bitcoin cannot be used as everyday cash, a store of value, or international unit of account because of its volatility. 
 StableUnit solves this problem with a completely decentralized and private stable cryptocurrency. 
-It’s fully backed by crypto collateral while the system is small, and utilizes multiple layers of black-swan resistant mechanisms to maintain a stable price.
+It’s fully backed by crypto collateral while the system is small, and utilizes multiple layers of black-swan resistant mechanisms to maintain a stable price..
 
 ## Proof of concept
+WIP!!! (like a lot, we're currency building it, PoC isn't nearly ready)
+---
+
 
 {{< youtube qx3rxGSVBDM >}}
 
@@ -57,7 +60,7 @@ As a last resort, people will be incentivized via interest to lock up their fund
     <img class="agent__group-arrow" src="/concept/flowchart_arrow.svg">
   </div>
   <div class="agent__group-wrapper agent__group-wrapper_link">
-    <a href="https://simulation.stableunit.org">Simulation results</a>
+    <a href="https://simulation.stableunit.org">Interactive simulation</a>
   </div>
 </div>
 
