@@ -761,6 +761,6 @@ plot_reserve_risk_by_spread(risk_by_spread, 0.8)
 
 ## Conclusion
 
-Using the above simplified contract and by deriving best effort estimations for the price drift and volatility parameters for Bitcoin and tether using historical prices, we estimate risk bounds for the contract reserve. These cumulative probabilities at different bounds reflect the liklihood that the contract reaches this state within 3 years time. We see that the likelihood of the contract dropping bellow a 10 percent bound is 22%. 
+Using the above simplified contract and by deriving best effort estimations for the price drift and volatility parameters for Bitcoin and tether using historical prices, we estimate risk bounds for the contract reserve. These cumulative probabilities at different bounds reflect the likelihood that the contract reaches this state within 3 years time. We see that the likelihood of the contract dropping below a 10 percent bound is 22%. 
 
-Therefore, the contract reserve without any additional mechanisms is able to provide necessary liquidity by its own with 78% probability which increases during the time. To further increase it close to 100% - it's necessary to use an initial reserve funding or additional stabilization mechanism such as multi-layer model proposed in the [whitepaper](/StableUnit-whitepaper.pdf).
+Therefore, the contract reserve without any additional mechanisms is able to provide necessary liquidity by its own with a 78% probability which increases during the period. To further increase it close to 100% - it's necessary to use an initial reserve funding or additional stabilization mechanism such as multi-layer model proposed in the [whitepaper](/StableUnit-whitepaper.pdf).

@@ -9,7 +9,7 @@ StableUnit solves this problem with a completely decentralized and private stabl
 It’s fully backed by crypto collateral while the system is small, and utilizes multiple layers of black-swan resistant mechanisms to maintain a stable price..
 
 ## Proof of concept
-WIP!!! (like a lot, we're currency building it, PoC isn't nearly ready)
+WIP!!! (like a lot, we're currentlyy building it, PoC isn't nearly ready)
 ---
 
 
