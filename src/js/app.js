@@ -52,7 +52,7 @@ window.addEventListener('load', function() {
   for (let j = 0; j < headerLinks.length; j++) {
     const section = headerLinks[j].getAttribute('href');
 
-    if (section[0] === '#') {
+    if (section.startsWith('#')) {
       sections.push(section);
     }
   }
