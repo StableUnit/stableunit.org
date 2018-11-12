@@ -1160,6 +1160,11 @@ pre {
 
 }
 
+.market {
+  background-color: white;
+  color: black;
+}
+
 @media (max-width: 991px) {
   .header__nav-mobile-button {
     height: 40px;

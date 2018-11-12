@@ -1,3 +1,5 @@
+import Market from './market';
+
 function createSlider(slider) {
   if (!slider) {
     return;
@@ -100,4 +102,38 @@ window.addEventListener('load', function() {
       }
     }
   });
+});
+
+window.addEventListener("load", function() {
+  // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+  if (typeof web3 !== "undefined") {
+    // Use Mist/MetaMask's provider
+    const market = new Market(document.querySelector('.market'));
+
+    window.market = market;
+  } else {
+    console.log("No web3? You should consider trying MetaMask!");
+  }
+
+  // APP >
+
+  // web3.eth.getAccounts(function(error, accounts) {
+  //   if (!error) {
+  //     web3.eth.getBalance(accounts[0], function(error, balance) {
+  //       if (!error) {
+  //         console.log(
+  //           "Your account: " +
+  //           accounts[0] +
+  //           " has a balance of: " +
+  //           balance.toNumber() / 1000000000000000000 +
+  //           "Ether"
+  //         );
+  //       } else {
+  //         console.error(error);
+  //       }
+  //     });
+  //   } else {
+  //     console.error(error);
+  //   }
+  // });
 });
