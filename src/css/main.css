@@ -1163,6 +1163,11 @@ pre {
 .market {
   background-color: white;
   color: black;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
