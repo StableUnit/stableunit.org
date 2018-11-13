@@ -1,5 +1,5 @@
-/* global Web3, web3 */
-import Currency from './currency';
+/* global Web3, web3, Promise */
+import AvailableCurrencies from './currencies';
 
 class Market {
   constructor(root, currencies = []) {
@@ -18,44 +18,51 @@ class Market {
     }
 
     this.instance = new Web3(web3.currentProvider);
-    this.currencies = currencies.map((name, index) => new Currency(name, index === 0 ? 'deposit' : 'receive'));
 
-    this.instance.eth.getAccounts()
+    this.getAccounts()
       .then((accounts) => {
         this.accounts = accounts;
-
-        this.createExchange();
 
         if (window.localStorage && localStorage.getItem('activeAccount')) {
           this.setActiveAccount(localStorage.getItem('activeAccount'), true);
         } else if (accounts.length) {
           this.setActiveAccount(accounts[0]);
         }
+
+        this.currencies = currencies.map((name, index) => {
+          const currency = new AvailableCurrencies[name](web3, name, index === 0 ? 'deposit' : 'receive');
+
+          currency.getBalance();
+
+          return currency;
+        });
+
+        this.createExchange();
       })
       .catch((error) => {
         console.error('Getting accounts error', error);
       });
   }
 
+  getAccounts() {
+    return new Promise((resolve, reject) => {
+      this.instance.eth.getAccounts((error, accounts) => {
+        if (error) {
+          return reject(error);
+        }
+
+        return resolve(accounts);
+      });
+    });
+  }
+
   setActiveAccount(account, ignoreSave = false) {
     this.activeAccount = account;
+    web3.eth.defaultAccount = account;
 
     if (!ignoreSave && window.localStorage) {
       localStorage.setItem('activeAccount', account);
     }
-
-    this.instance.eth.getBalance(this.activeAccount)
-      .then((balance) => {
-        for (let i = 0; i < this.currencies.length; i++) {
-          if (this.currencies[i].type === 'deposit') {
-            this.currencies[i].setBalance(balance);
-            break;
-          }
-        }
-      })
-      .catch((error) => {
-        console.error('Getting balance error', account, error);
-      });
   }
 
   clearView() {

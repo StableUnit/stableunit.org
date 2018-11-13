@@ -45,7 +45,7 @@ window.addEventListener('load', function() {
   const sections = [];
   const offset = 76;
 
-  window.market = new Market(document.querySelector('.market'), ['eth', 'dai']);
+  window.market = new Market(document.querySelector('.market'), ['su', 'eth']);
 
   if (sliders.length) {
     sliders.forEach(createSlider);

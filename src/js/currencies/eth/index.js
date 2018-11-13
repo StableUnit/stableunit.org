@@ -1,5 +1,6 @@
-class Currency {
-  constructor(name, type, value = 0) {
+class Ether {
+  constructor(web3, name, type, value = 0) {
+    this.web3 = web3;
     this.name = name;
     this.type = type;
     this.value = value;
@@ -9,6 +10,7 @@ class Currency {
     this.input = null;
     this.balanceLabel = null;
     this.currencyImage = null;
+    this.precision = 10e17;
   }
 
   create() {
@@ -31,6 +33,20 @@ class Currency {
     return this.container;
   }
 
+  getBalance() {
+    return new Promise((resolve, reject) => {
+      this.web3.eth.getBalance(this.web3.eth.defaultAccount, (error, balance) => {
+        if (error) {
+          return reject(error);
+        }
+
+        this.setBalance(balance);
+
+        return resolve(balance);
+      });
+    });
+  }
+
   setType(type) {
     this.type = type;
 
@@ -50,7 +66,7 @@ class Currency {
   }
 
   setBalance(balance = 0) {
-    this.balance = balance / 10e17;
+    this.balance = balance / this.precision;
 
     if (!this.balanceLabel) {
       return;
@@ -62,10 +78,6 @@ class Currency {
       this.balanceLabel.innerText = `${this.balance.toFixed(4)} ${this.name}`;
     }
   }
-
-  getBalance() {
-    return this.balance;
-  }
 }
 
-export default Currency;
+export default Ether;
