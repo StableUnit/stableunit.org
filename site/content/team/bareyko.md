@@ -1,5 +1,5 @@
 ---
-title: "Sasha Bareyko"
+title: "Alexander Bareyko"
 role: "Developer"
 subtitle: "Front-end developer @ 0+x, Yandex,"
 link: "https://github.com/energizer91"
