@@ -12,15 +12,14 @@ languages:
   en:
     LanguageName: English
     title: >-
-      Stable Unit: Decentralized low-volatility cryptocurrency with multi-layer
-      stabilization
+      Stable Unit: Decentralized private stable currency
     weight: 1
     menu:
       main:
         - url: "#mission"
           name: Mission
           weight: 1
-        - url: "#stableunit"
+        - url: "#whatis"
           name: What is
           weight: 2
         - url: "#roadmap"
