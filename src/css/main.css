@@ -907,6 +907,17 @@ section.mission strong {
   color: #F96F21;
 }
 
+.subscribe {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  background-color: #151515;
+  padding: 25px 20px;
+  cursor: pointer;
+}
+
 footer {
   background-color: #151515;
   color: white;
