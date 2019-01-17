@@ -1,2 +1,2 @@
 # StableUnit 
-## Decentralized privacy stable currency
+## Decentralized privacy stablecoin

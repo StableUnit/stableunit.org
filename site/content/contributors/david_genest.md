@@ -2,7 +2,7 @@
 title: "David Genest"
 link: "https://www.linkedin.com/in/dgenest/"
 linkType: "linkedin"
-weight: 2
+weight: 3
 ---
 *Analyst & Financial Modeler*
 

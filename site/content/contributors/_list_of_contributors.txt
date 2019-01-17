@@ -1,0 +1,22 @@
+---
+title: "Acknowledgment page"
+weight: 1
+---
+# List of contributors
+David Genest
+Alex Boreyko
+Timur Sultanov
+Emil Lerner
+Darshan Honale
+Mark Sergienko
+Jacob Steeves
+Devon Boulton-Mills
+Igor Barbyshev
+Matt Lockyer
+Jared Harrill
+Aviv Milner 
+Marcelo Carmona
+Kavi Lehdar
+Scott McKenzie
+
+Thanks goes to these wonderful people!
