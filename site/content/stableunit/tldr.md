@@ -3,8 +3,8 @@ title: "TLDR"
 weight: 2
 ---
 
-Decentralized currency.
+Decentralized e-cash.
 
-Stable-price bitcoin.
+Stable-price bitcoin/mimblewimble.
 
 Stablecoin. 

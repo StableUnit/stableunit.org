@@ -8,14 +8,16 @@ Bitcoin cannot be used as everyday cash, a store of value, or international unit
 StableUnit solves this problem with a completely decentralized and private stable cryptocurrency. 
 It’s fully backed by crypto collateral while the system is small, and utilizes multiple layers of black-swan resistant mechanisms to maintain a stable price..
 
-## Proof of concept
-WIP!!! (like a lot, we're currentlyy building it, PoC isn't nearly ready)
+## Proof of concept (WIP)
 ---
-
 
 {{< youtube qx3rxGSVBDM >}}
 
 Please help us with beta testing [join telegram group](https://t.me/stableunit)
+
+## Privacy
+
+We're developing privacy digital asset protocol in partnerships with Beam team (mimblewimble). https://distributed.com/news/exclusive-beam-launches-its-privacy-coin-plans-next-two-side-projects 
 
 ## MultiLayer Stabilization
 ![png](/concept/multilayer_stabilization.png)
