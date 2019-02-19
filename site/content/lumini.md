@@ -12,3 +12,7 @@ E.g. Eth -> Lumini -> EOS
 This only costs ~100k gas on Eth to transfer tokens on/off Lumini each time. No Eth gas required for transferring tokens within Lumini (though transaction fees need to be paid in Luminis, which will be significantly cheaper than regular Eth transfers, for preventing spam) - whereas Aztek requires ~900k gas for every transfer.
 
 ![png](/concept/lumini_simple.png)
+
+## Demo
+{{< youtube HMKA2NW_jG4 >}}
+
