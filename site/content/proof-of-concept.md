@@ -1,23 +1,13 @@
 ---
-title: "Proof of concept"
+title: "Stabilization"
 weight: 1
 ---
-## StableUnit overview
+
+## Overview of p2p monetary policy
 
 Bitcoin cannot be used as everyday cash, a store of value, or international unit of account because of its volatility. 
-StableUnit solves this problem with a completely decentralized and private stable cryptocurrency. 
+StableUnit solves this problem with a completely decentralized cryptocurrency. 
 It’s fully backed by crypto collateral while the system is small, and utilizes multiple layers of black-swan resistant mechanisms to maintain a stable price..
-
-## Proof of concept (WIP)
----
-
-{{< youtube qx3rxGSVBDM >}}
-
-Please help us with beta testing [join telegram group](https://t.me/stableunit)
-
-## Privacy
-
-We're developing privacy digital asset protocol in partnerships with Beam team (mimblewimble). https://distributed.com/news/exclusive-beam-launches-its-privacy-coin-plans-next-two-side-projects 
 
 ## MultiLayer Stabilization
 ![png](/concept/multilayer_stabilization.png)
@@ -71,3 +61,10 @@ As a last resort, people will be incentivized via interest to lock up their fund
 [Link to simulation](/simulation)
 
 [Simulation results](/simulation#results)
+
+
+## Demo (WIP)
+{{< youtube qx3rxGSVBDM >}}
+
+Please help us with beta testing [join telegram group](https://t.me/stableunit)
+

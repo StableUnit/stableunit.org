@@ -1,5 +1,5 @@
 ---
-title: "Our mission"
+title: "Mission"
 ---
 
 Money should be __decentralized, private, and available 

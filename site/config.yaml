@@ -19,11 +19,8 @@ languages:
         - url: "#mission"
           name: Mission
           weight: 1
-        - url: "#whatis"
-          name: What is
-          weight: 2
-        - url: "#roadmap"
-          name: Roadmap
+        - url: "#vision"
+          name: Plan
           weight: 3
         - url: "#team"
           name: Team
@@ -35,7 +32,7 @@ languages:
           name: Use cases
           weight: 6
         - url: "#daico"
-          name: DAICO
+          name: DAO
           weight: 7
 
   ru:
