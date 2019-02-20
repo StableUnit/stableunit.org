@@ -17,9 +17,9 @@ We use statistical methods to evaluate the strength of this mechanism along two 
 
 ## Contract Overview
 
-Abstractly, the Stable Unit contract is a machine which captures the demand for a stable currency and transforms it into a reserve capable of maintaining a non-volatile price. This is similar in nature to the model of an insurance company which transforms the demand for risk reduction into a reserve capable of intervening when those risks occur. 
+Abstractly, the Stable Unit contract is a machine which captures the demand for a stablecoin and transforms it into a reserve capable of maintaining a non-volatile price. This is similar in nature to the model of an insurance company which transforms the demand for risk reduction into a reserve capable of intervening when those risks occur. 
 
-The Stable Unit contract captures the demand for a stable currency by acting as a market maker around a steady value. During times of price volatility, the arbitration around the peg captures the energy produced by fluctuating demand -- always selling high, and buying low -- converting it into reserves which elevate the contract value and allow the token contract to expand supply further.
+The Stable Unit contract captures the demand for a stablecoin by acting as a market maker around a steady value. During times of price volatility, the arbitration around the peg captures the energy produced by fluctuating demand -- always selling high, and buying low -- converting it into reserves which elevate the contract value and allow the token contract to expand supply further.
 
 This system is parametrized by a ‘spread’ parameter determining the lowest bid and highest ask offered by the contract to individuals attempting to buy or to sell Stable Units. 
 
