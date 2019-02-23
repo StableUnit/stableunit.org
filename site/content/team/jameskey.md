@@ -2,7 +2,7 @@
 title: "James Key"
 role: "Blockchain Engineer and Researcher"
 subtitle: "Ex Quantum computing researcher @ UBC "
-link: "https://www.linkedin.com/in/james-key-17666059/"
+link: "https://www.linkedin.com/in/james-k-17666059/"
 linkType: "linkedin"
 avatar: "/img/jameskey.jpg"
 weight: 2
