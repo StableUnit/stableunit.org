@@ -22,11 +22,11 @@ languages:
         - url: "#vision"
           name: Plan
           weight: 3
+        - url: "#how"
+          name: How it works
+          weight: 4
         - url: "#team"
           name: Team
-          weight: 4
-        - url: "#contributors"
-          name: Contributors
           weight: 5
         - url: "#usecases"
           name: Use cases
