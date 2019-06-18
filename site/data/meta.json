@@ -2,17 +2,18 @@
   "whitepapers": [
     {
       "title": "Read our Tech White Paper v0.5",
-      "url": "/StableUnit-whitepaper.pdf"
+      "url": "/StableUnit-whitepaper.pdf",
+      "disabled": true
     },
     {
       "title": "Simplified Whitepaper (in progress)",
       "url": "/whitepaper.pdf",
-      "disabled": false
+      "disabled": true
     },
     {
       "title": "Simulation (in progress)",
       "url": "https://gitlab.com/stable_unit_simulations/stableunits_simulation_v1",
-      "disabled": false
+      "disabled": true
     }
   ],
   "social": [
@@ -23,6 +24,10 @@
     {
       "title": "telegram",
       "url": "https://t.me/stableunit"
+    },
+    {
+      "title": "github",
+      "url": "https://github.com/StableUnit"
     }
   ],
   "roadmap": [
