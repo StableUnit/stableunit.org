@@ -3,7 +3,7 @@ title: "D A O"
 ---
 Decentralized Autonomous Organisation (DAO) which gets funded using an Initial Token Distribution.
 
-Unlike ICOs, DAICO funds are released to the foundation in a manner that is tied to the completion of goals and investors are able to claim remainder of funds back if they are not satisfied with team’s performance.
+Unlike ICOs/IEOs, DAICO funds are released to the foundation in a manner that is tied to the completion of goals and investors are able to claim remainder of funds back if they are not satisfied with team’s performance.
 
 #### Stable Unit’s DAO Fundraising:
 - Stable Unit team does not receive all of the money immediately

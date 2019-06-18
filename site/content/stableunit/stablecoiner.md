@@ -1,5 +1,5 @@
 ---
-title: "Stablecoiner"
+title: "Is it like..."
 weight: 3
 disabled: false
 ---
