@@ -1,2 +1,2 @@
 # StableUnit 
-## Decentralized privacy stablecoin
+## Anonymous E-Cash
