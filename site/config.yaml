@@ -12,7 +12,7 @@ languages:
   en:
     LanguageName: English
     title: >-
-      Stable Unit: Decentralized private stablecoin
+      Stable Unit: Decentralized Privacy E-Cash
     weight: 1
     menu:
       main:

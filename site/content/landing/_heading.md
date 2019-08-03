@@ -1,2 +1,2 @@
 # StableUnit 
-## Anonymous E-Cash
+## Decentrazlied Privacy E-Cash
