@@ -1,2 +1,2 @@
 # StableUnit 
-## Decentrazlied Privacy E-Cash
+## Decentralized Privacy E-Cash
