@@ -5,6 +5,7 @@
   "repository": "netlify/victor-hugo",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "hugo": "gulp hugo",
     "build": "gulp build",
     "build-preview": "gulp build-preview",
