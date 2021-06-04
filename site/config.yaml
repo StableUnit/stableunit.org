@@ -12,7 +12,7 @@ languages:
   en:
     LanguageName: English
     title: >-
-      Stable Unit: Decentralized Privacy E-Cash
+      StableUnit: Decentralized Privacy E-Cash
     weight: 1
     menu:
       main:
@@ -22,21 +22,21 @@ languages:
         - url: "#vision"
           name: Plan
           weight: 3
-        - url: "#whatis"
-          name: StableUnit
-          weight: 4
-        - url: "#how"
-          name: How it works
-          weight: 5
-        - url: "#usecases"
-          name: Use cases
-          weight: 6
-        - url: "#daico"
-          name: DAO
-          weight: 7
-        - url: "https://reliable.cash/"
-          name: Forum
-          weight: 8
+#        - url: "#whatis"
+#          name: StableUnit
+#          weight: 4
+#        - url: "#how"
+#          name: How it works
+#          weight: 5
+#        - url: "#usecases"
+#          name: Use cases
+#          weight: 6
+#        - url: "#daico"
+#          name: DAO
+#          weight: 7
+#        - url: "https://reliable.cash/"
+#          name: Forum
+#          weight: 8
 
   ru:
     LanguageName: Русский
