@@ -25,8 +25,13 @@ gulp.task("server", (cb) => runServer(cb));
 gulp.task("server-preview", (cb) => runServer(cb));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+// gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build", (cb) => {
+  gulp.run("css");
+  buildSite(cb, [], "production");
+});
+// gulp.task("build", () => ["css", "js", "fonts"].forEach((cb) => buildSite(cb, [], "production")));
+gulp.task("build-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
